@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tom_storage"
+	group: ""
+	id: "22B644B0BE176633"
+	order_index: 12
+	quest_links: [ ]
+	quests: [ ]
+	title: "汤姆的简易存储"
+}

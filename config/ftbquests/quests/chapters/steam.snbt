@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam"
+	group: ""
+	icon: "gtceu:lp_steam_compressor"
+	id: "23851E4171576481"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["据说：把两种金属粉混在一起烧制就能得到&6合金&r。"]
+			icon: "gtceu:bronze_ingot"
+			id: "57960433A81BE159"
+			rewards: [{
+				count: 16
+				id: "5E4B33D5B3AB8DF7"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "17871E0A57962A31"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "第一种合金"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57960433A81BE159"]
+			description: ["相信我，这个会有用的"]
+			id: "52A43F057A6116B0"
+			tasks: [{
+				id: "60D1A273FA58A612"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			title: "第一台机器"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			id: "614C0A2F77B45397"
+			tasks: [{
+				count: 4L
+				id: "16B819F21D743092"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+	]
+	title: "{steam.gfs.chapter.title}"
+}

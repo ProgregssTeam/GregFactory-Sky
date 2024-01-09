@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hand"
+	group: ""
+	id: "0E8E61B9938E2C30"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: ["{hand.gfs.log.description}"]
+		id: "04C85EEBF3AD4BD3"
+		rewards: [{
+			count: 2
+			id: "13CF8C8986A9F539"
+			item: "minecraft:oak_sapling"
+			type: "item"
+		}]
+		tasks: [{
+			id: "153EBFA0D2EAFD2E"
+			item: "minecraft:oak_log"
+			type: "item"
+		}]
+		title: "{hand.gfs.log.title}"
+		x: -10.0d
+		y: 0.0d
+	}]
+	title: "{hand.gfs.chapter.title}"
+}

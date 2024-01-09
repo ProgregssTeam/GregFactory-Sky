@@ -1,0 +1,7 @@
+
+[Allowed-Blocks]
+	#Here you can add every block you like to get a Bone Meal effect applied.
+	Block-List = ["minecraft:bamboo", "minecraft:brown_mushroom", "minecraft:red_mushroom", "minecraft:wheat_seeds", "minecraft:carrots", "minecraft:potatoes", "minecraft:beetroots", "minecraft:melon_stem", "minecraft:pumpkin_stem", "minecraft:big_dripleaf", "minecraft:small_dripleaf"]
+	#Here you can add block Tags for easier use of this mod.
+	Tag-List = ["minecraft:crops", "minecraft:saplings"]
+
