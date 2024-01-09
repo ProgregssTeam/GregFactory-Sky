@@ -1,3 +1,6 @@
+/*
+* machines.js - Add recipes for our new machines.
+*/
 ServerEvents.recipes(event => {
     const voltage_to_cable = {
         "lv": "tin",
@@ -9,6 +12,8 @@ ServerEvents.recipes(event => {
         "zpm": "vanadium_gallium",
         "uv": "yttrium_barium_cuprate"
     }
+
+    // Create machine recipes for a specfic voltage
     function create_recipe_voltage(voltage) {
         event.shaped(
             "gtceu:" + voltage + "_inscriber",
@@ -35,6 +40,8 @@ ServerEvents.recipes(event => {
             }
         );
     }
+
+    // Create all
     const voltages = [
         "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"
     ];

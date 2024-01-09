@@ -1,4 +1,8 @@
+/*
+* exnihilo.js - Modify recipes about Ex Nihilo.
+*/
 ServerEvents.recipes(event => {
+    // Modify the mesh meterial
     function modify_mesh_recipe(meterial, level) {
         const mesh_id = "exnihilosequentia:" + level + "_mesh";
         event.remove({ output: mesh_id });
@@ -16,6 +20,7 @@ ServerEvents.recipes(event => {
     modify_mesh_recipe("gtceu:stainless_steel_rod", "emerald");
     modify_mesh_recipe("gtceu:titanium_rod", "netherite");
 
+    // Remove the default sieve recipes
     event.remove({
         mod: "exnihilosequentia",
         input: ["minecraft:gravel",
@@ -25,25 +30,31 @@ ServerEvents.recipes(event => {
             "minecraft:soulsand",
             "exnihilosequentia:crushed_end_stone"]
     });
-    function add_gt_sieve_recipe(name, input, itemchance_table, mesh) {
+    function add_sieve_recipe(name, input, itemchance_table, mesh) {
+        // Add recipe for Ex Nihilo
+        itemchance_table.forEach(itemchance =>
+            event.recipes.exnihilosequentia.sifting(input, itemchance[0], [{ chance: itemchance[1], mesh: mesh }]));
+
+        // Add recipe for GT electric machines
         let recipe = event.recipes.gtceu.sieve("_sieve_" + name + "_" + mesh)
             .itemInputs(input)
             .notConsumable("exnihilosequentia:" + mesh + "_mesh")
-            .duration(90)
+            .duration(80)
+            .EUt(30);
+        itemchance_table.forEach(itemchance =>
+            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, 500));
+
+        // Add recipe for GT steam machines, which have 9 output slots
+        let steam_recipe = event.recipes.gtceu.steamsieve("_steam_sieve_" + name + "_" + mesh)
+            .itemInputs(input)
+            .notConsumable("exnihilosequentia:" + mesh + "_mesh")
+            .duration(160)
             .EUt(7);
-        itemchance_table.forEach(itemchance => {
-            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, 500);
-        });
-    }
-    function add_exnihilo_sift_recipe(name, input, itemchance, mesh) {
-        event.recipes.exnihilosequentia.sifting(input,
-            itemchance[0], [{ chance: itemchance[1], mesh: mesh }]);
-    }
-    function add_sieve_recipe(name, input, itemchance_table, mesh) {
-        itemchance_table.forEach(itemchance => add_exnihilo_sift_recipe(name, input, itemchance, mesh));
-        add_gt_sieve_recipe(name, input, itemchance_table, mesh);
+        for (let i = 0; i < itemchance_table.length && i < 9; i++)
+            steam_recipe.chancedOutput(itemchance_table[i][0], itemchance_table[i][1] * 10000, 500);
     }
 
+    // Gravel
     const mesh_1_gravel_table = [
         ["minecraft:flint", 0.3],
         ["gtceu:tin_crushed_ore", 0.3],
@@ -91,6 +102,7 @@ ServerEvents.recipes(event => {
     const mesh_6_gravel_table = [
 
     ];
+
     add_sieve_recipe("gravel", "minecraft:gravel", mesh_1_gravel_table, "string");
     add_sieve_recipe("gravel", "minecraft:gravel", mesh_2_gravel_table, "flint");
     add_sieve_recipe("gravel", "minecraft:gravel", mesh_3_gravel_table, "iron");
