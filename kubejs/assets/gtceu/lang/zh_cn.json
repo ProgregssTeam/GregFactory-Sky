@@ -1,0 +1,21 @@
+{
+    "block.gtceu.lv_inscriber": "基础压印器",
+    "block.gtceu.mv_inscriber": "§b进阶压印器§r",
+    "block.gtceu.hv_inscriber": "§6进阶压印器 II§r",
+    "block.gtceu.ev_inscriber": "§5进阶压印器 III§r",
+    "block.gtceu.iv_inscriber": "§1精英压印器§r",
+    "block.gtceu.luv_inscriber": "§d精英压印器 II§r",
+    "block.gtceu.zpm_inscriber": "§c精英压印器 III§r",
+    "block.gtceu.uv_inscriber": "§3终极压印器§r",
+    "gtceu.sieve": "筛子",
+    "block.gtceu.lp_steamsieve": "低压蒸汽筛",
+    "block.gtceu.hp_steamsieve": "高压蒸汽筛",
+    "block.gtceu.lv_sieve": "基础电动筛",
+    "block.gtceu.mv_sieve": "§b进阶电动筛§r",
+    "block.gtceu.hv_sieve": "§6进阶电动筛 II§r",
+    "block.gtceu.ev_sieve": "§5进阶电动筛 III§r",
+    "block.gtceu.iv_sieve": "§1精英电动筛§r",
+    "block.gtceu.luv_sieve": "§d精英电动筛 II§r",
+    "block.gtceu.zpm_sieve": "§c精英电动筛 III§r",
+    "block.gtceu.uv_sieve": "§3终极电动筛§r"
+}

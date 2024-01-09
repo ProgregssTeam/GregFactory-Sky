@@ -25,9 +25,23 @@ ServerEvents.recipes(event => {
             "minecraft:soulsand",
             "exnihilosequentia:crushed_end_stone"]
     });
-    function add_sift_recipe(input, itemchance, mesh) {
+    function add_gt_sieve_recipe(name, input, itemchance_table, mesh) {
+        let recipe = event.recipes.gtceu.sieve("_sieve_" + name + "_" + mesh)
+            .itemInputs(input)
+            .notConsumable("exnihilosequentia:" + mesh + "_mesh")
+            .duration(90)
+            .EUt(7);
+        itemchance_table.forEach(itemchance => {
+            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, 500);
+        });
+    }
+    function add_exnihilo_sift_recipe(name, input, itemchance, mesh) {
         event.recipes.exnihilosequentia.sifting(input,
             itemchance[0], [{ chance: itemchance[1], mesh: mesh }]);
+    }
+    function add_sieve_recipe(name, input, itemchance_table, mesh) {
+        itemchance_table.forEach(itemchance => add_exnihilo_sift_recipe(name, input, itemchance, mesh));
+        add_gt_sieve_recipe(name, input, itemchance_table, mesh);
     }
 
     const mesh_1_gravel_table = [
@@ -41,7 +55,6 @@ ServerEvents.recipes(event => {
         ["gtceu:bentonite_crushed_ore", 0.3],
         ["gtceu:gypsum_crushed_ore", 0.2],
     ];
-    mesh_1_gravel_table.forEach(itemchance => add_sift_recipe("minecraft:gravel", itemchance, "string"));
 
     const mesh_2_gravel_table = [
         ["minecraft:flint", 0.25],
@@ -54,7 +67,6 @@ ServerEvents.recipes(event => {
         ["gtceu:stibnite_crushed_ore", 0.4],
         ["gtceu:redstone_crushed_ore", 0.9],
     ];
-    mesh_2_gravel_table.forEach(itemchance => add_sift_recipe("minecraft:gravel", itemchance, "flint"));
 
     const mesh_3_gravel_table = [
         ["minecraft:flint", 0.1],
@@ -66,21 +78,23 @@ ServerEvents.recipes(event => {
         ["gtceu:galena_crushed_ore", 0.2],
         ["gtceu:silver_crushed_ore", 0.25],
     ];
-    mesh_3_gravel_table.forEach(itemchance => add_sift_recipe("minecraft:gravel", itemchance, "iron"));
 
     const mesh_4_gravel_table = [
         ["gtceu:pyrolusite_crushed_ore", 0.4],
     ];
-    mesh_4_gravel_table.forEach(itemchance => add_sift_recipe("minecraft:gravel", itemchance, "diamond"));
 
     const mesh_5_gravel_table = [
         ["gtceu:bauxite_crushed_ore", 0.55],
         ["gtceu:ilmenite_crushed_ore", 0.4],
     ];
-    mesh_5_gravel_table.forEach(itemchance => add_sift_recipe("minecraft:gravel", itemchance, "emerald"));
 
     const mesh_6_gravel_table = [
 
     ];
-    mesh_6_gravel_table.forEach(itemchance => add_sift_recipe("minecraft:gravel", itemchance, "netherite"));
+    add_sieve_recipe("gravel", "minecraft:gravel", mesh_1_gravel_table, "string");
+    add_sieve_recipe("gravel", "minecraft:gravel", mesh_2_gravel_table, "flint");
+    add_sieve_recipe("gravel", "minecraft:gravel", mesh_3_gravel_table, "iron");
+    add_sieve_recipe("gravel", "minecraft:gravel", mesh_4_gravel_table, "diamond");
+    add_sieve_recipe("gravel", "minecraft:gravel", mesh_5_gravel_table, "emerald");
+    add_sieve_recipe("gravel", "minecraft:gravel", mesh_6_gravel_table, "netherite");
 });
