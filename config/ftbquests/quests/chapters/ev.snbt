@@ -4,7 +4,7 @@
 	filename: "ev"
 	group: ""
 	id: "1780BA34940895F3"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [{
 		description: ["{ev.gfs.hull.description}"]

@@ -5,51 +5,84 @@
 	group: ""
 	icon: "gtceu:lp_steam_compressor"
 	id: "23851E4171576481"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["据说：把两种金属粉混在一起烧制就能得到&6合金&r。"]
-			icon: "gtceu:bronze_ingot"
-			id: "57960433A81BE159"
-			rewards: [{
-				count: 16
-				id: "5E4B33D5B3AB8DF7"
-				item: "gtceu:bronze_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				count: 16L
-				id: "17871E0A57962A31"
-				item: "gtceu:bronze_ingot"
-				type: "item"
-			}]
-			title: "第一种合金"
-			x: -10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["57960433A81BE159"]
-			description: ["相信我，这个会有用的"]
+			dependencies: ["02600FCB14DC3A27"]
+			description: [""]
 			id: "52A43F057A6116B0"
 			tasks: [{
 				id: "60D1A273FA58A612"
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			title: "第一台机器"
 			x: -8.0d
 			y: 0.0d
 		}
 		{
-			id: "614C0A2F77B45397"
+			dependencies: [
+				"02600FCB14DC3A27"
+				"68F28467B39CD0DB"
+			]
+			id: "21B9197E220A653C"
 			tasks: [{
-				count: 4L
-				id: "16B819F21D743092"
-				item: "gtceu:basic_electronic_circuit"
+				id: "2356C762C79E754E"
+				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["52A43F057A6116B0"]
+			id: "0AB0FCD2A7BA2E6A"
+			optional: true
+			tasks: [{
+				id: "35CD979CB5ED49D0"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"52A43F057A6116B0"
+				"21B9197E220A653C"
+			]
+			id: "225AC4393F6EE812"
+			tasks: [
+				{
+					id: "1601656F3C9607CD"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0959BD0C41EF910C"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["225AC4393F6EE812"]
+			id: "40A9D3ADD52871A4"
+			rewards: [{
+				count: 16
+				id: "748EED7EFD864A7C"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1954AE046553E7A2"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
 			y: 0.0d
 		}
 	]

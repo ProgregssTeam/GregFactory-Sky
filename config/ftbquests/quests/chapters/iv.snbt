@@ -4,7 +4,7 @@
 	filename: "iv"
 	group: ""
 	id: "69A659EF3833F0DE"
-	order_index: 8
+	order_index: 7
 	quest_links: [ ]
 	quests: [{
 		description: ["{iv.gfs.hull.description}"]

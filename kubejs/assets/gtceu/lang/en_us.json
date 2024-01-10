@@ -18,5 +18,7 @@
     "block.gtceu.iv_sieve": "§1Elite Electric Sieve§r",
     "block.gtceu.luv_sieve": "§dElite Electric Sieve II§r",
     "block.gtceu.zpm_sieve": "§cElite Electric Sieve III§r",
-    "block.gtceu.uv_sieve": "§3Ultimate Electric Sieve§r"
+    "block.gtceu.uv_sieve": "§3Ultimate Electric Sieve§r",
+    "gtceu.void_miner": "Void Miner",
+    "block.gtceu.void_miner": "Void Miner"
 }

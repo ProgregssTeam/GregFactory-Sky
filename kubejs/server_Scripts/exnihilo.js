@@ -20,6 +20,8 @@ ServerEvents.recipes(event => {
     modify_mesh_recipe("gtceu:stainless_steel_rod", "emerald");
     modify_mesh_recipe("gtceu:titanium_rod", "netherite");
 
+    event.shapeless("2x gtceu:tin_alloy_dust", ["gtceu:tin_dust", "gtceu:iron_dust"]);
+
     // Remove the default sieve recipes
     event.remove({
         mod: "exnihilosequentia",
@@ -28,7 +30,8 @@ ServerEvents.recipes(event => {
             "exnihilosequentia:dust",
             "exnihilosequentia:crushed_netherrack",
             "minecraft:soulsand",
-            "exnihilosequentia:crushed_end_stone"]
+            "exnihilosequentia:crushed_end_stone"],
+        not: { output: ["exnihilosequentia:dust", "minecraft:clay"] }
     });
     function add_sieve_recipe(name, input, itemchance_table, mesh) {
         // Add recipe for Ex Nihilo
@@ -57,26 +60,27 @@ ServerEvents.recipes(event => {
     // Gravel
     const mesh_1_gravel_table = [
         ["minecraft:flint", 0.3],
+        ["gtceu:coal_crushed_ore", 0.6],
         ["gtceu:tin_crushed_ore", 0.3],
         ["gtceu:cassiterite_crushed_ore", 0.5],
-        ["gtceu:coal_crushed_ore", 0.6],
         ["gtceu:iron_crushed_ore", 0.4],
         ["gtceu:magnetite_crushed_ore", 0.4],
         ["gtceu:vanadium_magnetite_crushed_ore", 0.4],
-        ["gtceu:bentonite_crushed_ore", 0.3],
         ["gtceu:gypsum_crushed_ore", 0.2],
+        ["gtceu:bentonite_crushed_ore", 0.3],
     ];
 
     const mesh_2_gravel_table = [
         ["minecraft:flint", 0.25],
         ["gtceu:copper_crushed_ore", 0.4],
-        ["gtceu:bornite_crushed_ore", 0.4],
-        ["gtceu:chalcocite_crushed_ore", 0.4],
-        ["gtceu:tetrahedrite_crushed_ore", 0.4],
         ["gtceu:pyrite_crushed_ore", 0.4],
         ["gtceu:goethite_crushed_ore", 0.4],
         ["gtceu:stibnite_crushed_ore", 0.4],
         ["gtceu:redstone_crushed_ore", 0.9],
+        ["gtceu:calcite_crushed_ore", 0.9],
+        ["gtceu:bornite_crushed_ore", 0.3],
+        ["gtceu:chalcocite_crushed_ore", 0.3],
+        ["gtceu:tetrahedrite_crushed_ore", 0.3],
     ];
 
     const mesh_3_gravel_table = [

@@ -18,5 +18,7 @@
     "block.gtceu.iv_sieve": "§1精英电动筛§r",
     "block.gtceu.luv_sieve": "§d精英电动筛 II§r",
     "block.gtceu.zpm_sieve": "§c精英电动筛 III§r",
-    "block.gtceu.uv_sieve": "§3终极电动筛§r"
+    "block.gtceu.uv_sieve": "§3终极电动筛§r",
+    "gtceu.void_miner": "虚空采矿",
+    "block.gtceu.void_miner": "虚空采矿机"
 }

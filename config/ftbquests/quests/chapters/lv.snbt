@@ -4,7 +4,7 @@
 	filename: "lv"
 	group: ""
 	id: "1848A200340151F9"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [{
 		description: ["{lv.gfs.hull.description}"]

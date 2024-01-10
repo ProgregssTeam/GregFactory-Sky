@@ -4,7 +4,7 @@
 	filename: "luv"
 	group: ""
 	id: "2EE31AD69F413D7B"
-	order_index: 9
+	order_index: 8
 	quest_links: [ ]
 	quests: [{
 		description: ["{luv.gfs.hull.description}"]

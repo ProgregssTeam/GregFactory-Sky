@@ -4,7 +4,7 @@
 	filename: "zpm"
 	group: ""
 	id: "479F3C4D5CCFD6C6"
-	order_index: 10
+	order_index: 9
 	quest_links: [ ]
 	quests: [{
 		description: ["{zpm.gfs.hull.description}"]

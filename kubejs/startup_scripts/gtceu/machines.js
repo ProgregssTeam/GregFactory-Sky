@@ -5,7 +5,7 @@ const $ItemRecipeCapability = Java.loadClass("com.gregtechceu.gtceu.api.capabili
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     // sieve in exnihilo
-    event.create("steamsieve", "steam")
+    event.create("steamsieve", "electric")
         .category("gfs")
         .setEUIO("in")
         .setMaxIOSize(2, 9, 0, 0) // ItemI, ItemO, FluidI, FluidO
@@ -44,5 +44,5 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
         .recipeType("inscriber", true, true)
         .tankScalingFunction(tier => tier * 4800)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/test_machine"));
+        .workableTieredHullRenderer(GTCEu.id("block/machines/inscriber"));
 });

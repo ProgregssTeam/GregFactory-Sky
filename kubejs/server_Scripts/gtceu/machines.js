@@ -2,6 +2,28 @@
 * machines.js - Add recipes for our new machines.
 */
 ServerEvents.recipes(event => {
+    // Steam machines
+    event.shaped(
+        "gtceu:lp_steamsieve",
+        ["AXA", "BYB", "AAA"],
+        {
+            A: "gtceu:bronze_small_fluid_pipe",
+            X: "#exnihilosequentia:sieves",
+            B: "#forge:pistons",
+            Y: "gtceu:bronze_machine_casing"
+        }
+    );
+    event.shaped(
+        "gtceu:hp_steamsieve",
+        ["AAA", "BYB", "AAA"],
+        {
+            A: "gtceu:wrought_iron_plate",
+            B: "gtceu:tin_alloy_small_fluid_pipe",
+            Y: "gtceu:lp_steamsieve"
+        }
+    );
+
+    // Electrics
     const voltage_to_cable = {
         "lv": "tin",
         "mv": "copper",
