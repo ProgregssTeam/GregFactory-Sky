@@ -37,3 +37,5 @@ observable_announce
 *.log
 PCL.ini
 launcher_profiles.json
+gtsky.jar
+gtsky.json
