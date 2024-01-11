@@ -436,6 +436,7 @@
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
+			size: 2.0d
 			tasks: [
 				{
 					id: "431A88696F960151"
@@ -504,6 +505,11 @@
 					item: "minecraft:wheat_seeds"
 					type: "item"
 				}
+				{
+					id: "70D9E64A29F871EC"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
 			]
 			x: -2.0d
 			y: 2.0d
@@ -544,6 +550,35 @@
 				type: "item"
 			}]
 			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["760C86419A7EB53E"]
+			id: "5CB9A43886802721"
+			tasks: [
+				{
+					id: "3C8C906B6A934B1B"
+					item: "exnihilosequentia:unfired_crucible"
+					type: "item"
+				}
+				{
+					id: "30D385AED1B53955"
+					item: "exnihilosequentia:fired_crucible"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5CB9A43886802721"]
+			id: "73632156128B9325"
+			tasks: [{
+				id: "5EC50E55B03D73EE"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -4.0d
 			y: -4.0d
 		}
 	]

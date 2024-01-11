@@ -111,6 +111,261 @@
 			x: -4.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["0B01764C373C6BBF"]
+			id: "7E17DFABE7E76334"
+			tasks: [
+				{
+					id: "7B6D130E5E0AB5FF"
+					item: "gtceu:lp_steam_alloy_smelter"
+					type: "item"
+				}
+				{
+					id: "56D623A25AAE6063"
+					item: "gtceu:hp_steam_alloy_smelter"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0B01764C373C6BBF"]
+			id: "77FEF3A94E0BE498"
+			tasks: [
+				{
+					id: "559BCB7A8EEC51ED"
+					item: "gtceu:lp_steam_extractor"
+					type: "item"
+				}
+				{
+					id: "6F1C0485636FF114"
+					item: "gtceu:hp_steam_extractor"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"77FEF3A94E0BE498"
+				"444771C9CE1786E7"
+			]
+			id: "4974B33E792591ED"
+			tasks: [{
+				count: 3L
+				id: "7B53322E8A30E806"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B01764C373C6BBF"]
+			id: "5844B9320448E0A3"
+			optional: true
+			tasks: [
+				{
+					id: "477211C707F133B0"
+					item: "gtceu:lp_steam_furnace"
+					type: "item"
+				}
+				{
+					id: "6B220EF5D358B498"
+					item: "gtceu:hp_steam_furnace"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0C652FDEC7AFC683"]
+			id: "444771C9CE1786E7"
+			tasks: [{
+				id: "04C0B515DD8B9A67"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4974B33E792591ED"
+				"7E17DFABE7E76334"
+			]
+			id: "24ED11F4503C0637"
+			tasks: [{
+				id: "123CCE9CA90D8C26"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["24ED11F4503C0637"]
+			id: "49441C838A255ABB"
+			tasks: [{
+				id: "1945AC2823CDF6B4"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7E17DFABE7E76334"]
+			icon: "gtceu:vacuum_tube"
+			id: "54E081640EA11512"
+			tasks: [
+				{
+					id: "5AD578A87CD21E47"
+					item: "gtceu:glass_tube"
+					type: "item"
+				}
+				{
+					id: "2D11D511D9939B1D"
+					item: "gtceu:vacuum_tube"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"444771C9CE1786E7"
+				"25107E1933AA09B0"
+			]
+			id: "7DF09889A6730708"
+			tasks: [{
+				id: "48601316E7088328"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["444771C9CE1786E7"]
+			icon: "gtceu:resin_printed_circuit_board"
+			id: "1BD64BCA738C951D"
+			tasks: [
+				{
+					id: "6437F432B783DEC9"
+					item: "gtceu:resin_circuit_board"
+					type: "item"
+				}
+				{
+					id: "67CDEAADD7214382"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"40A9D3ADD52871A4"
+				"7DF09889A6730708"
+				"54E081640EA11512"
+				"49441C838A255ABB"
+				"1BD64BCA738C951D"
+			]
+			id: "7015EDFB9220C95B"
+			size: 2.0d
+			tasks: [{
+				id: "22FBE4C064CEF7E7"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["550C03883F4DAC19"]
+			id: "25107E1933AA09B0"
+			tasks: [{
+				id: "28DCA2BF72F0DE50"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B01764C373C6BBF"]
+			id: "2D1B19A193908435"
+			optional: true
+			tasks: [{
+				id: "75BC2A7E5E23B7DB"
+				item: "gtceu:hp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["52A43F057A6116B0"]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "373396BEF0D77223"
+			tasks: [
+				{
+					id: "18FA1B4CD7BF75DC"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+				{
+					id: "7D2CAFE56FAC0854"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"40A9D3ADD52871A4"
+				"373396BEF0D77223"
+			]
+			id: "3E3065E9A55B9B58"
+			optional: true
+			tasks: [{
+				id: "2E1AAAB4D0F4991B"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0B01764C373C6BBF"
+				"55E1A1B9F8C7BEBF"
+				"73632156128B9325"
+			]
+			id: "0A4A5572ADB7EDE1"
+			tasks: [
+				{
+					id: "2CABAFF2036FED57"
+					item: "gtceu:lp_steam_rock_crusher"
+					type: "item"
+				}
+				{
+					id: "77085BD7B5670248"
+					item: "gtceu:hp_steam_rock_crusher"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 2.0d
+		}
 	]
 	title: "{steam.gfs.chapter.title}"
 }

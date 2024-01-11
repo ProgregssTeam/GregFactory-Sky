@@ -57,6 +57,9 @@ ServerEvents.recipes(event => {
             steam_recipe.chancedOutput(itemchance_table[i][0], itemchance_table[i][1] * 10000, 500);
     }
 
+    // Dirt
+    event.recipes.exnihilosequentia.sifting("minecraft:dirt", "minecraft:sugar_cane", [{ chance: 0.1, mesh: "string" }]);
+
     // Gravel
     const mesh_1_gravel_table = [
         ["minecraft:flint", 0.3],
