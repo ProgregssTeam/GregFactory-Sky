@@ -114,6 +114,7 @@
 		{
 			dependencies: ["2BA6A93A3C02426A"]
 			description: ["{hand.gfs.oak_sieve.description}"]
+			icon: "exnihilosequentia:string_mesh"
 			id: "4D7A244365443F22"
 			tasks: [
 				{
@@ -134,8 +135,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4D7A244365443F22"]
+			dependencies: [
+				"4D7A244365443F22"
+				"5967A6B261A5A934"
+			]
 			description: ["{hand.gfs.cobblestone.description}"]
+			icon: "minecraft:cobblestone"
 			id: "2A535A169C6AB9F4"
 			rewards: [{
 				count: 16
@@ -249,17 +254,20 @@
 		}
 		{
 			dependencies: ["095ECBE114359D9C"]
+			description: ["{hand.gfs.gttools.description}"]
 			id: "26C84C80BD20801B"
 			tasks: [{
 				id: "3D12723C14834CF9"
 				title: "GT Tools"
 				type: "checkmark"
 			}]
+			title: "{hand.gfs.gttools.title}"
 			x: 6.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["624F48DFDE345DD0"]
+			description: ["{hand.gfs.sand.description}"]
 			id: "3842C519140388CD"
 			rewards: [{
 				count: 16
@@ -272,6 +280,7 @@
 				item: "minecraft:sand"
 				type: "item"
 			}]
+			title: "{hand.gfs.sand.title}"
 			x: 2.0d
 			y: -2.0d
 		}
@@ -280,6 +289,7 @@
 				"095ECBE114359D9C"
 				"26C84C80BD20801B"
 			]
+			description: ["{hand.gfs.tin_iron_dusts.description}"]
 			id: "2870C029E218FA9E"
 			tasks: [
 				{
@@ -293,11 +303,14 @@
 					type: "item"
 				}
 			]
+			title: "{hand.gfs.tin_iron_dusts.title}"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["2870C029E218FA9E"]
+			description: ["{hand.gfs.tin_alloy.description}"]
+			icon: "gtceu:tin_alloy_ingot"
 			id: "0A31F9D939065674"
 			tasks: [
 				{
@@ -311,39 +324,46 @@
 					type: "item"
 				}
 			]
+			title: "{hand.gfs.tin_alloy.title}"
 			x: 6.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["4BD86AC8A8BC1D19"]
+			description: ["{hand.gfs.dirt.description}"]
 			id: "5967A6B261A5A934"
 			tasks: [{
 				id: "5C06DBD4D083128A"
 				item: "minecraft:dirt"
 				type: "item"
 			}]
+			title: "{hand.gfs.dirt.title}"
 			x: -4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["3842C519140388CD"]
+			description: ["{hand.gfs.dust.description}"]
 			id: "76BD02EF86838EA9"
 			tasks: [{
 				id: "5333D7B822B6ED10"
 				item: "exnihilosequentia:dust"
 				type: "item"
 			}]
+			title: "{hand.gfs.dust.title}"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["26C84C80BD20801B"]
+			description: ["{hand.gfs.bucket.description}"]
 			id: "5DD1EAA48D036DF0"
 			tasks: [{
 				id: "73F8E1066137DC4D"
 				item: "minecraft:bucket"
 				type: "item"
 			}]
+			title: "{hand.gfs.bucket.title}"
 			x: 4.0d
 			y: -2.0d
 		}
@@ -352,78 +372,96 @@
 				"5DD1EAA48D036DF0"
 				"6E20E2FD9C9CFB46"
 			]
+			description: ["{hand.gfs.water_bucket.description}"]
 			id: "55E1A1B9F8C7BEBF"
 			tasks: [{
 				id: "11DE93DEDE6FA3C5"
 				item: "minecraft:water_bucket"
 				type: "item"
 			}]
+			title: "{hand.gfs.water_bucket.title}"
 			x: 2.0d
 			y: -4.0d
 		}
 		{
-			dependencies: ["76BD02EF86838EA9"]
+			dependencies: [
+				"76BD02EF86838EA9"
+				"55E1A1B9F8C7BEBF"
+			]
+			description: ["{hand.gfs.clay.description}"]
 			id: "760C86419A7EB53E"
 			tasks: [{
 				id: "6E771401287AD6F8"
 				item: "minecraft:clay"
 				type: "item"
 			}]
+			title: "{hand.gfs.clay.title}"
 			x: -2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["0A31F9D939065674"]
+			description: ["{hand.gfs.flint_mesh.description}"]
 			id: "77BA1EE9AC0180F3"
 			tasks: [{
 				id: "6CB130A6229C89D1"
 				item: "exnihilosequentia:flint_mesh"
 				type: "item"
 			}]
+			title: "{hand.gfs.flint_mesh.title}"
 			x: 6.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["77BA1EE9AC0180F3"]
+			description: ["{hand.gfs.copper_crushed_ore.description}"]
 			id: "1D3B3A1618FB4B1D"
 			tasks: [{
 				id: "50BC1676B8CA589C"
 				item: "gtceu:copper_crushed_ore"
 				type: "item"
 			}]
+			title: "{hand.gfs.copper_crushed_ore.title}"
 			x: 4.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["1D3B3A1618FB4B1D"]
+			description: ["{hand.gfs.bronze.description}"]
+			icon: "gtceu:bronze_ingot"
 			id: "1BABA00C33BEF6B7"
-			tasks: [{
-				id: "431A88696F960151"
-				item: "gtceu:bronze_dust"
+			rewards: [{
+				count: 16
+				id: "2FD07B7A4BFA5CEB"
+				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
+			tasks: [
+				{
+					id: "431A88696F960151"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "1484DDDDDC4ECD04"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.bronze.title}"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
-			dependencies: ["1BABA00C33BEF6B7"]
-			id: "02600FCB14DC3A27"
-			tasks: [{
-				id: "5DD126724C90824A"
-				item: "gtceu:bronze_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 6.0d
-		}
-		{
 			dependencies: ["26C84C80BD20801B"]
+			description: ["{hand.gfs.cauldron.description}"]
 			id: "0802F009B50804D1"
 			tasks: [{
 				id: "5860BED7E33DDA3A"
 				item: "minecraft:cauldron"
 				type: "item"
 			}]
+			title: "{hand.gfs.cauldron.title}"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -432,14 +470,81 @@
 				"4D7A244365443F22"
 				"3842C519140388CD"
 			]
+			description: ["{hand.gfs.diamond.description}"]
 			id: "68F28467B39CD0DB"
 			tasks: [{
 				id: "386893F15353FA9D"
 				item: "minecraft:diamond"
 				type: "item"
 			}]
+			title: "{hand.gfs.diamond.title}"
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4D7A244365443F22"
+				"5967A6B261A5A934"
+			]
+			icon: "exnihilosequentia:grass_seeds"
+			id: "550C03883F4DAC19"
+			tasks: [
+				{
+					id: "18B5B1D28870D63A"
+					item: "exnihilosequentia:grass_seeds"
+					type: "item"
+				}
+				{
+					id: "7224B599232129C0"
+					item: "exnihilosequentia:mycelium_spores"
+					type: "item"
+				}
+				{
+					id: "2A5B86A4E775EF6F"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"55E1A1B9F8C7BEBF"
+				"550C03883F4DAC19"
+			]
+			icon: "exnihilosequentia:witch_water_bucket"
+			id: "4D77CE5E6152C0CA"
+			tasks: [
+				{
+					id: "27833B7E5E202909"
+					item: "exnihilosequentia:witch_water_bucket"
+					type: "item"
+				}
+				{
+					id: "1F32BA962CD5E500"
+					item: "minecraft:brown_mushroom"
+					type: "item"
+				}
+				{
+					id: "45DE3D7A5BEF0929"
+					item: "minecraft:red_mushroom"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D77CE5E6152C0CA"]
+			id: "0C652FDEC7AFC683"
+			tasks: [{
+				id: "1CBA405A596B1681"
+				item: "minecraft:slime_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
 		}
 	]
 	title: "{hand.gfs.chapter.title}"
