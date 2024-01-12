@@ -20,12 +20,12 @@ ServerEvents.recipes(event => {
         ["gtceu:iron_ore", 0.1],
         ["gtceu:magnetite_ore", 0.1],
         ["gtceu:vanadium_magnetite_ore", 0.1],
-        ["gtceu:hematitie_ore", 0.05],
+        ["gtceu:hematite_ore", 0.05],
         ["gtceu:gold_ore", 0.05],
         ["gtceu:diamond_ore", 0.02],
         ["gtceu:aluminium_ore", 0.05],
         ["gtceu:bauxite_ore", 0.05],
-        ["gtceu:ilmentie_ore", 0.05],
+        ["gtceu:ilmenite_ore", 0.05],
     ];
     add_void_miner_recipe("ev", 1920, 0, ev_table_overworld);
 });
