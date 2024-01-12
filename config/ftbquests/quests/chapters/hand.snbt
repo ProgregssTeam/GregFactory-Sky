@@ -468,8 +468,8 @@
 		}
 		{
 			dependencies: [
-				"4D7A244365443F22"
 				"3842C519140388CD"
+				"77BA1EE9AC0180F3"
 			]
 			description: ["{hand.gfs.diamond.description}"]
 			id: "68F28467B39CD0DB"
@@ -480,7 +480,7 @@
 			}]
 			title: "{hand.gfs.diamond.title}"
 			x: 0.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [

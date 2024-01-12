@@ -351,6 +351,7 @@
 				"73632156128B9325"
 			]
 			id: "0A4A5572ADB7EDE1"
+			optional: true
 			tasks: [
 				{
 					id: "2CABAFF2036FED57"
@@ -365,6 +366,25 @@
 			]
 			x: -10.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["0B01764C373C6BBF"]
+			id: "2EB993EC22693593"
+			optional: true
+			tasks: [
+				{
+					id: "4F09736EFFBAB992"
+					item: "gtceu:lp_steamsieve"
+					type: "item"
+				}
+				{
+					id: "6F56720CF86FEEF2"
+					item: "gtceu:hp_steamsieve"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 4.0d
 		}
 	]
 	title: "{steam.gfs.chapter.title}"

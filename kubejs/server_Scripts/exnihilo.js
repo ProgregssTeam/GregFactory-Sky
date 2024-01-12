@@ -34,21 +34,24 @@ ServerEvents.recipes(event => {
         not: { output: ["exnihilosequentia:dust", "minecraft:clay"] }
     });
     function add_sieve_recipe(name, input, itemchance_table, mesh) {
+        if (itemchance_table.length == 0)
+            return;
+
         // Add recipe for Ex Nihilo
         itemchance_table.forEach(itemchance =>
             event.recipes.exnihilosequentia.sifting(input, itemchance[0], [{ chance: itemchance[1], mesh: mesh }]));
 
         // Add recipe for GT electric machines
-        let recipe = event.recipes.gtceu.sieve("_sieve_" + name + "_" + mesh)
+        let recipe = event.recipes.gtceu.sieve("sieve_" + name + "_" + mesh)
             .itemInputs(input)
             .notConsumable("exnihilosequentia:" + mesh + "_mesh")
             .duration(80)
             .EUt(30);
         itemchance_table.forEach(itemchance =>
-            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, 500));
+            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, 200));
 
         // Add recipe for GT steam machines, which have 9 output slots
-        let steam_recipe = event.recipes.gtceu.steamsieve("_steam_sieve_" + name + "_" + mesh)
+        let steam_recipe = event.recipes.gtceu.steamsieve("steam_sieve_" + name + "_" + mesh)
             .itemInputs(input)
             .notConsumable("exnihilosequentia:" + mesh + "_mesh")
             .duration(160)
@@ -116,4 +119,72 @@ ServerEvents.recipes(event => {
     add_sieve_recipe("gravel", "minecraft:gravel", mesh_4_gravel_table, "diamond");
     add_sieve_recipe("gravel", "minecraft:gravel", mesh_5_gravel_table, "emerald");
     add_sieve_recipe("gravel", "minecraft:gravel", mesh_6_gravel_table, "netherite");
+
+    // Sand
+    const mesh_1_sand_table = [
+    ];
+
+    const mesh_2_sand_table = [
+        ["minecraft:diamond", 0.05],
+        ["minecraft:emerald", 0.05],
+        ["minecraft:lapis_lazuli", 0.07],
+        ["gtceu:lazurite_gem", 0.07],
+        ["gtceu:sodalite_gem", 0.07],
+        ["gtceu:apatite_gem", 0.1],
+        ["gtceu:cinnabar_gem", 0.1],
+    ];
+
+    const mesh_3_sand_table = [
+        ["minecraft:diamond", 0.15],
+        ["minecraft:emerald", 0.15],
+        ["gtceu:andradite_gem", 0.1],
+        ["gtceu:grossular_gem", 0.1],
+        ["gtceu:pyrope_gem", 0.1],
+        ["gtceu:spessartine_gem", 0.1],
+        ["gtceu:uvarovite_gem", 0.1],
+        ["gtceu:red_garnet_gem", 0.1],
+        ["gtceu:yellow_garnet_gem", 0.1],
+    ];
+
+    const mesh_4_sand_table = [
+    ];
+
+    const mesh_5_sand_table = [
+    ];
+
+    const mesh_6_sand_table = [
+    ];
+
+    add_sieve_recipe("sand", "minecraft:sand", mesh_1_sand_table, "string");
+    add_sieve_recipe("sand", "minecraft:sand", mesh_2_sand_table, "flint");
+    add_sieve_recipe("sand", "minecraft:sand", mesh_3_sand_table, "iron");
+    add_sieve_recipe("sand", "minecraft:sand", mesh_4_sand_table, "diamond");
+    add_sieve_recipe("sand", "minecraft:sand", mesh_5_sand_table, "emerald");
+    add_sieve_recipe("sand", "minecraft:sand", mesh_6_sand_table, "netherite");
+
+    // Dust
+    const mesh_1_dust_table = [
+    ];
+
+    const mesh_2_dust_table = [
+    ];
+
+    const mesh_3_dust_table = [
+    ];
+
+    const mesh_4_dust_table = [
+    ];
+
+    const mesh_5_dust_table = [
+    ];
+
+    const mesh_6_dust_table = [
+    ];
+
+    add_sieve_recipe("dust", "minecraft:dust", mesh_1_dust_table, "string");
+    add_sieve_recipe("dust", "minecraft:dust", mesh_2_dust_table, "flint");
+    add_sieve_recipe("dust", "minecraft:dust", mesh_3_dust_table, "iron");
+    add_sieve_recipe("dust", "minecraft:dust", mesh_4_dust_table, "diamond");
+    add_sieve_recipe("dust", "minecraft:dust", mesh_5_dust_table, "emerald");
+    add_sieve_recipe("dust", "minecraft:dust", mesh_6_dust_table, "netherite");
 });
