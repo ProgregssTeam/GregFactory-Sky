@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .workableTieredHullRenderer(GTCEu.id("block/machines/sieve"));
 
     event.create("inscriber", "simple",
-        GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
+        GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
         .recipeType("inscriber", true, true)
         .tankScalingFunction(tier => tier * 4800)
         .workableTieredHullRenderer(GTCEu.id("block/machines/inscriber"));

@@ -209,11 +209,18 @@
 		{
 			dependencies: ["24ED11F4503C0637"]
 			id: "49441C838A255ABB"
-			tasks: [{
-				id: "1945AC2823CDF6B4"
-				item: "gtceu:rubber_plate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "006CB5FB65FF1DBC"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "5CDF563D7FC2E7DD"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+			]
 			x: -4.0d
 			y: 4.0d
 		}
@@ -299,7 +306,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["0B01764C373C6BBF"]
+			dependencies: ["3502D1FA9E24E29A"]
 			id: "2D1B19A193908435"
 			optional: true
 			tasks: [{
@@ -307,8 +314,8 @@
 				item: "gtceu:hp_steam_solar_boiler"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 0.0d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["52A43F057A6116B0"]
@@ -385,6 +392,35 @@
 			]
 			x: -10.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["40A9D3ADD52871A4"]
+			id: "35E3F3385F246D2E"
+			tasks: [{
+				id: "56E24B0BFF9F2162"
+				item: "exnihilosequentia:iron_mesh"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["35E3F3385F246D2E"]
+			id: "3502D1FA9E24E29A"
+			tasks: [
+				{
+					id: "22C68E7E3400FC76"
+					item: "gtceu:silver_crushed_ore"
+					type: "item"
+				}
+				{
+					id: "27910E90EE7CF796"
+					item: "gtceu:aluminium_crushed_ore"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	title: "{steam.gfs.chapter.title}"

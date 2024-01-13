@@ -121,7 +121,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["21323FB8BA940119"]
+			dependencies: [
+				"21323FB8BA940119"
+				"7A0231322E02418B"
+			]
 			icon: "gtceu:vanadium_steel_ingot"
 			id: "287712493AC381F6"
 			tasks: [
@@ -241,7 +244,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["0C346F94A91FC004"]
+			dependencies: [
+				"0C346F94A91FC004"
+				"686F11A969C396AF"
+			]
 			id: "755AAD41F1A2058D"
 			tasks: [{
 				id: "0FB7BF1A37486160"
@@ -354,6 +360,131 @@
 			]
 			x: 4.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["4CCD0D4900BF94A1"]
+			id: "7390EA7EDCE4B573"
+			tasks: [{
+				id: "391D5B4667BB33B9"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7390EA7EDCE4B573"]
+			id: "7A0231322E02418B"
+			tasks: [{
+				id: "44B51F6B42F8C0FE"
+				item: "gtceu:chromium_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7A0231322E02418B"
+				"21323FB8BA940119"
+			]
+			id: "5E0AAD335DBB7E41"
+			tasks: [
+				{
+					id: "59F89207A7E844A0"
+					item: "gtceu:stainless_steel_dust"
+					type: "item"
+				}
+				{
+					id: "524D8FC0B48E0E93"
+					item: "gtceu:stainless_steel_ingot"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5E0AAD335DBB7E41"]
+			id: "33E37AD95906D39C"
+			tasks: [{
+				id: "3F9A69EDFF7D6B8A"
+				item: "exnihilosequentia:emerald_mesh"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56D1C50F29EC37ED"]
+			id: "5D0C6AFD4A3BC212"
+			tasks: [{
+				id: "0606E652F418027B"
+				item: "gtceu:mv_chemical_reactor"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"20D5F62B40940BBE"
+				"5D0C6AFD4A3BC212"
+			]
+			dependency_requirement: "one_completed"
+			id: "7BA456959DF4C622"
+			tasks: [{
+				id: "0E2EDD480768CED5"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7BA456959DF4C622"
+				"37385349D34F896D"
+				"5D0C6AFD4A3BC212"
+			]
+			id: "15EBE4D092B818A0"
+			tasks: [{
+				id: "6AA2488F37F8384E"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"20D5F62B40940BBE"
+				"0948E15895389763"
+			]
+			dependency_requirement: "one_completed"
+			id: "45FF531F26B85B95"
+			tasks: [{
+				id: "13991EBB9F18CB02"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"15EBE4D092B818A0"
+				"45FF531F26B85B95"
+			]
+			id: "686F11A969C396AF"
+			size: 2.0d
+			tasks: [{
+				id: "0EB6F4E97902FFC1"
+				item: "gtceu:polyethylene_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
 		}
 	]
 	title: "{mv.gfs.chapter.title}"

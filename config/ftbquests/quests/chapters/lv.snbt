@@ -269,7 +269,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4461F29C4093AAC0"]
+			dependencies: [
+				"4461F29C4093AAC0"
+				"3502D1FA9E24E29A"
+			]
 			id: "6D7AA255166E63C7"
 			tasks: [{
 				id: "47E57ECBE59C012E"
@@ -345,6 +348,39 @@
 			}]
 			x: 8.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["6D7AA255166E63C7"]
+			id: "45AF895195ADD4BB"
+			tasks: [{
+				id: "10DC3F99C7B9FA78"
+				item: "exnihilosequentia:diamond_mesh"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "20D5F62B40940BBE"
+			tasks: [{
+				id: "7B2B6B89C9646B09"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "0948E15895389763"
+			tasks: [{
+				id: "55767097D252B772"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
 		}
 	]
 	title: "{lv.gfs.chapter.title}"

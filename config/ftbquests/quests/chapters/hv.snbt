@@ -6,23 +6,85 @@
 	id: "44DB366084F6FA51"
 	order_index: 5
 	quest_links: [ ]
-	quests: [{
-		description: ["{hv.gfs.hull.description}"]
-		id: "4CCD0D4900BF94A2"
-		rewards: [{
-			count: 16
-			id: "0F09E79F7E768222"
-			item: "gtceu:stainless_steel_ingot"
-			type: "item"
-		}]
-		tasks: [{
-			id: "513E1331C38A44E2"
-			item: "gtceu:hv_machine_hull"
-			type: "item"
-		}]
-		title: "{hv.gfs.hull.title}"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: [
+				"5E0AAD335DBB7E41"
+				"686F11A969C396AF"
+				"3623559FFADCD017"
+			]
+			description: ["{hv.gfs.hull.description}"]
+			id: "4CCD0D4900BF94A2"
+			rewards: [{
+				count: 16
+				id: "0F09E79F7E768222"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "513E1331C38A44E2"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			title: "{hv.gfs.hull.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CCD0D4900BF94A2"]
+			id: "28C6A853DA0A0EE9"
+			tasks: [{
+				id: "4D6AF9992CE69C9C"
+				item: "gtceu:hv_electric_motor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28C6A853DA0A0EE9"]
+			id: "5B8853C0D277115D"
+			tasks: [{
+				id: "60A2F6E0A8469A3F"
+				item: "gtceu:hv_electric_piston"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["28C6A853DA0A0EE9"]
+			id: "762E819B112F3B00"
+			tasks: [{
+				id: "70A58A25906766BB"
+				item: "gtceu:hv_electric_pump"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28C6A853DA0A0EE9"]
+			id: "084ED243F3910609"
+			tasks: [{
+				id: "4A09012C11EA1D59"
+				item: "gtceu:hv_conveyor_module"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B8853C0D277115D"]
+			id: "3AFB64FA91EB1970"
+			tasks: [{
+				id: "7707FA497076F9D2"
+				item: "gtceu:hv_robot_arm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+	]
 	title: "{hv.gfs.chapter.title}"
 }
