@@ -176,12 +176,22 @@
 			tasks: [
 				{
 					id: "01DD213FFEB66D6C"
-					item: "gtceu:lv_sifter"
-					type: "item"
-				}
-				{
-					id: "0B266CF19397EE2B"
-					item: "gtceu:mv_sifter"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_sifter"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_sifter"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -346,18 +356,26 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "64657D7EB685019F"
-			tasks: [
-				{
-					id: "04C4BB3940215961"
-					item: "gtceu:lv_brewery"
-					type: "item"
+			tasks: [{
+				id: "43B673D89C617F8A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_brewery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_brewery"
+							}
+						]
+					}
 				}
-				{
-					id: "722FB50F53BA97BD"
-					item: "gtceu:mv_brewery"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: 4.0d
 			y: 4.0d
 		}

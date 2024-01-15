@@ -1,3 +1,6 @@
+/*
+* multiblocks.js - Register new recipe types and multiblocks.
+*/
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("void_miner")
         .category("gfs")

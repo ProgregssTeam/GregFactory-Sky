@@ -15,11 +15,12 @@ ServerEvents.recipes(event => {
     );
     event.shaped(
         "gtceu:hp_steamsieve",
-        ["AAA", "BYB", "AAA"],
+        ["ABA", "CDC", "AAA"],
         {
             A: "gtceu:wrought_iron_plate",
-            B: "gtceu:tin_alloy_small_fluid_pipe",
-            Y: "gtceu:lp_steamsieve"
+            B: "gtceu:steel_plate",
+            C: "gtceu:tin_alloy_small_fluid_pipe",
+            D: "gtceu:lp_steamsieve"
         }
     );
 
@@ -34,38 +35,41 @@ ServerEvents.recipes(event => {
         "zpm": "vanadium_gallium",
         "uv": "yttrium_barium_cuprate"
     }
+    const voltages = [
+        "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"
+    ];
 
     // Create machine recipes for a specfic voltage
     function create_recipe_voltage(voltage) {
+        const volt = voltages[voltage];
+        if (voltage >= 2) {
+            event.shaped(
+                "gtceu:" + volt + "_inscriber",
+                ["AXA", "BYC", "DED"],
+                {
+                    A: "gtceu:" + volt + "_electric_piston",
+                    X: "ae2:inscriber",
+                    B: "gtceu:" + volt + "_robot_arm",
+                    Y: "gtceu:" + volt + "_machine_hull",
+                    C: "gtceu:" + volt + "_conveyor_module",
+                    D: "#forge:circuits/" + volt,
+                    E: "gtceu:" + voltage_to_cable[volt] + "_single_cable"
+                }
+            );
+        }
         event.shaped(
-            "gtceu:" + voltage + "_inscriber",
-            ["AXA", "BYC", "DED"],
-            {
-                A: "gtceu:" + voltage + "_electric_piston",
-                X: "ae2:inscriber",
-                B: "gtceu:" + voltage + "_robot_arm",
-                Y: "gtceu:" + voltage + "_machine_hull",
-                C: "gtceu:" + voltage + "_conveyor_module",
-                D: "#forge:circuits/" + voltage,
-                E: "gtceu:" + voltage_to_cable[voltage] + "_single_cable"
-            }
-        );
-        event.shaped(
-            "gtceu:" + voltage + "_sieve",
+            "gtceu:" + volt + "_sieve",
             ["AXA", "BYB", "CAC"],
             {
-                A: "gtceu:" + voltage_to_cable[voltage] + "_single_cable",
+                A: "gtceu:" + voltage_to_cable[volt] + "_single_cable",
                 X: "#exnihilosequentia:sieves",
-                B: "gtceu:" + voltage + "_electric_piston",
-                Y: "gtceu:" + voltage + "_machine_hull",
-                C: "#forge:circuits/" + voltage
+                B: "gtceu:" + volt + "_electric_piston",
+                Y: "gtceu:" + volt + "_machine_hull",
+                C: "#forge:circuits/" + volt
             }
         );
     }
 
     // Create all
-    const voltages = [
-        "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"
-    ];
-    voltages.forEach(create_recipe_voltage);
+    [0, 1, 2, 3, 4, 5, 6, 7].forEach(create_recipe_voltage);
 });

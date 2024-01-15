@@ -1,3 +1,6 @@
+/*
+* multiblocks.js - Add recipes for our new multiblocks.
+*/
 ServerEvents.recipes(event => {
     function add_void_miner_recipe(name, eu, circuit, table) {
         let recipe = event.recipes.gtceu.void_miner("void_miner_" + name + "_" + circuit)

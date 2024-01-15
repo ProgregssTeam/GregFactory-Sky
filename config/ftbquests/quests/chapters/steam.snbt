@@ -12,7 +12,7 @@
 			dependencies: ["1BABA00C33BEF6B7"]
 			id: "0B01764C373C6BBF"
 			tasks: [{
-				id: "7D00BF5D126166F2"
+				id: "12FFBC697E2B8668"
 				item: {
 					Count: 1b
 					id: "itemfilters:or"
@@ -114,36 +114,52 @@
 		{
 			dependencies: ["0B01764C373C6BBF"]
 			id: "7E17DFABE7E76334"
-			tasks: [
-				{
-					id: "7B6D130E5E0AB5FF"
-					item: "gtceu:lp_steam_alloy_smelter"
-					type: "item"
+			tasks: [{
+				id: "6CD243C0A3539049"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_alloy_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_alloy_smelter"
+							}
+						]
+					}
 				}
-				{
-					id: "56D623A25AAE6063"
-					item: "gtceu:hp_steam_alloy_smelter"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: -8.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["0B01764C373C6BBF"]
 			id: "77FEF3A94E0BE498"
-			tasks: [
-				{
-					id: "559BCB7A8EEC51ED"
-					item: "gtceu:lp_steam_extractor"
-					type: "item"
+			tasks: [{
+				id: "0CA3A07B6FD24EB3"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_extractor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_extractor"
+							}
+						]
+					}
 				}
-				{
-					id: "6F1C0485636FF114"
-					item: "gtceu:hp_steam_extractor"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: -8.0d
 			y: 6.0d
 		}
@@ -166,18 +182,26 @@
 			dependencies: ["0B01764C373C6BBF"]
 			id: "5844B9320448E0A3"
 			optional: true
-			tasks: [
-				{
-					id: "477211C707F133B0"
-					item: "gtceu:lp_steam_furnace"
-					type: "item"
+			tasks: [{
+				id: "12B088369CB54390"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_furnace"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_furnace"
+							}
+						]
+					}
 				}
-				{
-					id: "6B220EF5D358B498"
-					item: "gtceu:hp_steam_furnace"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: -10.0d
 			y: -2.0d
 		}
@@ -310,8 +334,23 @@
 			id: "2D1B19A193908435"
 			optional: true
 			tasks: [{
-				id: "75BC2A7E5E23B7DB"
-				item: "gtceu:hp_steam_solar_boiler"
+				id: "43CE5D5E806F81C5"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solar_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 2.0d
@@ -344,8 +383,27 @@
 			id: "3E3065E9A55B9B58"
 			optional: true
 			tasks: [{
-				id: "2E1AAAB4D0F4991B"
-				item: "gtceu:hp_steam_macerator"
+				id: "2E17DA3AD3E38879"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_compressor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_forge_hammer"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: -4.0d
@@ -359,18 +417,58 @@
 			]
 			id: "0A4A5572ADB7EDE1"
 			optional: true
-			tasks: [
-				{
-					id: "2CABAFF2036FED57"
-					item: "gtceu:lp_steam_rock_crusher"
-					type: "item"
+			tasks: [{
+				id: "54F0A159511E8059"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_rock_crusher"
+							}
+						]
+					}
 				}
-				{
-					id: "77085BD7B5670248"
-					item: "gtceu:hp_steam_rock_crusher"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: -10.0d
 			y: 2.0d
 		}
@@ -378,18 +476,26 @@
 			dependencies: ["0B01764C373C6BBF"]
 			id: "2EB993EC22693593"
 			optional: true
-			tasks: [
-				{
-					id: "4F09736EFFBAB992"
-					item: "gtceu:lp_steamsieve"
-					type: "item"
+			tasks: [{
+				id: "3893AA48071C87C0"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steamsieve"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steamsieve"
+							}
+						]
+					}
 				}
-				{
-					id: "6F56720CF86FEEF2"
-					item: "gtceu:hp_steamsieve"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: -10.0d
 			y: 4.0d
 		}

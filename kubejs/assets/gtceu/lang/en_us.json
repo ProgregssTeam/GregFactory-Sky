@@ -1,4 +1,6 @@
 {
+    "material.quartz_glass": "Quartz Glass",
+    "gtceu.inscriber": "Inscriber",
     "block.gtceu.lv_inscriber": "Basic Inscriber",
     "block.gtceu.mv_inscriber": "§bAdvanced Inscriber§r",
     "block.gtceu.hv_inscriber": "§6Advanced Inscriber II§r",
@@ -8,9 +10,9 @@
     "block.gtceu.zpm_inscriber": "§cElite Inscriber III§r",
     "block.gtceu.uv_inscriber": "§3Ultimate Inscriber§r",
     "gtceu.steamsieve": "Steam Sieve",
-    "gtceu.sieve": "Electric Sieve",
     "block.gtceu.lp_steamsieve": "Low Pressure Steam Sieve",
     "block.gtceu.hp_steamsieve": "High Pressure Steam Sieve",
+    "gtceu.sieve": "Electric Sieve",
     "block.gtceu.lv_sieve": "Basic Electric Sieve",
     "block.gtceu.mv_sieve": "§bAdvanced Electric Sieve§r",
     "block.gtceu.hv_sieve": "§6Advanced Electric Sieve II§r",

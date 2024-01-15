@@ -1,4 +1,6 @@
 {
+    "material.quartz_glass": "石英玻璃",
+    "gtceu.inscriber": "压印器",
     "block.gtceu.lv_inscriber": "基础压印器",
     "block.gtceu.mv_inscriber": "§b进阶压印器§r",
     "block.gtceu.hv_inscriber": "§6进阶压印器 II§r",
@@ -10,9 +12,9 @@
     "block.gtceu.lp_steam_solar_boiler": "低压蒸汽太阳能锅炉",
     "block.gtceu.hp_steam_solar_boiler": "高压蒸汽太阳能锅炉",
     "gtceu.steamsieve": "蒸汽筛",
-    "gtceu.sieve": "电动筛",
     "block.gtceu.lp_steamsieve": "低压蒸汽筛",
     "block.gtceu.hp_steamsieve": "高压蒸汽筛",
+    "gtceu.sieve": "电动筛",
     "block.gtceu.lv_sieve": "基础电动筛",
     "block.gtceu.mv_sieve": "§b进阶电动筛§r",
     "block.gtceu.hv_sieve": "§6进阶电动筛 II§r",
@@ -21,6 +23,6 @@
     "block.gtceu.luv_sieve": "§d精英电动筛 II§r",
     "block.gtceu.zpm_sieve": "§c精英电动筛 III§r",
     "block.gtceu.uv_sieve": "§3终极电动筛§r",
-    "gtceu.void_miner": "虚空采矿",
+    "gtceu.void_miner": "虚空采矿机",
     "block.gtceu.void_miner": "虚空采矿机"
 }
