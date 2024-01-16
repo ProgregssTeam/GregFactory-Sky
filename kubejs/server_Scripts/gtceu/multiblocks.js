@@ -1,4 +1,19 @@
+/*
+* multiblocks.js - Add recipes for our new multiblocks.
+*/
 ServerEvents.recipes(event => {
+    event.shaped(
+        "gtceu:void_miner",
+        ["AAA", "BCB", "DED"],
+        {
+            A: "gtceu:ev_electric_motor",
+            B: "gtceu:gold_single_cable",
+            C: "gtceu:ev_machine_hull",
+            D: "#forge:circuits/ev",
+            E: "gtceu:ev_sensor"
+        }
+    );
+
     function add_void_miner_recipe(name, eu, circuit, table) {
         let recipe = event.recipes.gtceu.void_miner("void_miner_" + name + "_" + circuit)
             .circuit(circuit)
@@ -6,7 +21,7 @@ ServerEvents.recipes(event => {
             .duration(30)
             .EUt(eu);
         table.forEach(itemchance =>
-            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, 500));
+            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, itemchance[1] * 5000));
     }
     const ev_table_overworld = [
         ["gtceu:coal_ore", 0.2],

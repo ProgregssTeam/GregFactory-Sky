@@ -176,12 +176,22 @@
 			tasks: [
 				{
 					id: "01DD213FFEB66D6C"
-					item: "gtceu:lv_sifter"
-					type: "item"
-				}
-				{
-					id: "0B266CF19397EE2B"
-					item: "gtceu:mv_sifter"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_sifter"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_sifter"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -194,7 +204,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["5A356CDEBFCA9EFA"]
+			dependencies: [
+				"7A3486C039B9077D"
+				"5A356CDEBFCA9EFA"
+			]
 			id: "7F40FF8DBD1E8C10"
 			tasks: [{
 				id: "41C96FB98D8C607A"
@@ -346,18 +359,26 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "64657D7EB685019F"
-			tasks: [
-				{
-					id: "04C4BB3940215961"
-					item: "gtceu:lv_brewery"
-					type: "item"
+			tasks: [{
+				id: "43B673D89C617F8A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_brewery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_brewery"
+							}
+						]
+					}
 				}
-				{
-					id: "722FB50F53BA97BD"
-					item: "gtceu:mv_brewery"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: 4.0d
 			y: 4.0d
 		}
@@ -460,14 +481,22 @@
 			dependencies: [
 				"20D5F62B40940BBE"
 				"0948E15895389763"
+				"6CE0B241B37C1E94"
 			]
 			dependency_requirement: "one_completed"
 			id: "45FF531F26B85B95"
-			tasks: [{
-				id: "13991EBB9F18CB02"
-				item: "gtceu:oxygen_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "13991EBB9F18CB02"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+				{
+					id: "15E94AC08F210A2B"
+					item: "gtceu:hydrogen_bucket"
+					type: "item"
+				}
+			]
 			x: 12.0d
 			y: -4.0d
 		}

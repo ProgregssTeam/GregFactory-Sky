@@ -17,6 +17,7 @@
 				item: "minecraft:oak_sapling"
 				type: "item"
 			}]
+			size: 2.0d
 			tasks: [{
 				id: "153EBFA0D2EAFD2E"
 				item: "minecraft:oak_log"
@@ -580,6 +581,24 @@
 			}]
 			x: -4.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["4D77CE5E6152C0CA"]
+			id: "477113C24CAC4587"
+			rewards: [{
+				count: 32
+				id: "0A4BF079CB3ECD43"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "675976FDD14446B8"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
 		}
 	]
 	title: "{hand.gfs.chapter.title}"

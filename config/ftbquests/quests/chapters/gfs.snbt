@@ -10,6 +10,7 @@
 	quests: [{
 		description: ["{start.gfs.welcome.description}"]
 		id: "207B3AC75D3EBA74"
+		size: 3.0d
 		tasks: [{
 			id: "38CC3BF6E8E53270"
 			title: "Have fun!"

@@ -308,6 +308,7 @@
 		{
 			dependencies: ["0FC6834107E00DF8"]
 			id: "3D2FE62ACE63A67F"
+			size: 2.0d
 			tasks: [{
 				id: "01D1F1195C4445BA"
 				item: "gtceu:good_electronic_circuit"
