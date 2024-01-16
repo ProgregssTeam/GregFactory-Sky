@@ -1,0 +1,260 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "32DCB5F5DFE3930C"
+	group: ""
+	icon: "gtceu:lv_steam_turbine"
+	id: "32DCB5F5DFE3930C"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependency_requirement: "one_completed"
+			id: "5111E1994F0448DB"
+			tasks: [{
+				id: "6404A793F12226F1"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solar_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "低压蒸汽生成"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5111E1994F0448DB"]
+			id: "3615D54965EE2D92"
+			tasks: [{
+				id: "5C95B1D691B783E9"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "高压蒸汽生成"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3615D54965EE2D92"]
+			id: "1B66975F3C84C1EC"
+			tasks: [{
+				id: "6A19675315C54D54"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B66975F3C84C1EC"]
+			id: "3049D3CAAD198DF1"
+			tasks: [{
+				id: "2B6165D313754FAD"
+				item: "gtceu:steel_large_boiler"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3049D3CAAD198DF1"]
+			id: "4A8D14B84D0C28D1"
+			tasks: [{
+				id: "3E9604A6CF43D7C9"
+				item: "gtceu:titanium_large_boiler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4A8D14B84D0C28D1"]
+			id: "3866DFA699A59569"
+			tasks: [{
+				id: "205E9B4D68AA40BF"
+				item: "gtceu:tungstensteel_large_boiler"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B66975F3C84C1EC"]
+			id: "102BDE3F95B8821B"
+			tasks: [{
+				id: "4B32F90CF50E27AD"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["102BDE3F95B8821B"]
+			id: "39822B5F13601DD8"
+			tasks: [{
+				id: "5EBD5C10E4F6F93E"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3049D3CAAD198DF1"]
+			id: "52BE9AAF39E6BC01"
+			tasks: [{
+				id: "5626590E2297649B"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A8D14B84D0C28D1"]
+			id: "4E31DD3964122C78"
+			tasks: [{
+				id: "6BFAB0741674334E"
+				item: "gtceu:steam_large_turbine"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			id: "586BD72476705596"
+			tasks: [{
+				id: "2CB634F537F46B31"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["586BD72476705596"]
+			id: "52226C27AA490657"
+			tasks: [{
+				id: "05BC13F4AF6632F9"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52226C27AA490657"]
+			id: "635BFC82DDD5577A"
+			tasks: [{
+				id: "2A016AD9B028D86E"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["635BFC82DDD5577A"]
+			id: "201A7AB2DFDCD9E7"
+			tasks: [{
+				id: "1A1352322DBBD2F8"
+				item: "gtceu:large_combustion_engine"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["201A7AB2DFDCD9E7"]
+			id: "6389454460EA671E"
+			tasks: [{
+				id: "789ECF2F4B93D865"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "69333E29E00A1CE7"
+			tasks: [{
+				id: "300CCA87EE2E5A9F"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["69333E29E00A1CE7"]
+			id: "148E3AA53EDEB159"
+			tasks: [{
+				id: "643A6798914D5033"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["148E3AA53EDEB159"]
+			id: "262F319A8624A2C5"
+			tasks: [{
+				id: "510CA571151A2CF2"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["262F319A8624A2C5"]
+			id: "7797B48B378230C0"
+			tasks: [{
+				id: "0230FDD819B72E9B"
+				item: "gtceu:gas_large_turbine"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+	]
+	title: "发电机"
+}
