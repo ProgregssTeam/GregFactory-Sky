@@ -204,7 +204,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["5A356CDEBFCA9EFA"]
+			dependencies: [
+				"7A3486C039B9077D"
+				"5A356CDEBFCA9EFA"
+			]
 			id: "7F40FF8DBD1E8C10"
 			tasks: [{
 				id: "41C96FB98D8C607A"
@@ -478,14 +481,22 @@
 			dependencies: [
 				"20D5F62B40940BBE"
 				"0948E15895389763"
+				"6CE0B241B37C1E94"
 			]
 			dependency_requirement: "one_completed"
 			id: "45FF531F26B85B95"
-			tasks: [{
-				id: "13991EBB9F18CB02"
-				item: "gtceu:oxygen_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "13991EBB9F18CB02"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+				{
+					id: "15E94AC08F210A2B"
+					item: "gtceu:hydrogen_bucket"
+					type: "item"
+				}
+			]
 			x: 12.0d
 			y: -4.0d
 		}

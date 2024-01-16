@@ -6,7 +6,34 @@ ServerEvents.recipes(event => {
         event.remove({ output: name });
     }
     const remove_items = [
-        "industrialforegoing:machine_frame_pity"
+        "industrialforegoing:machine_frame_pity",
+        "industrialforegoing:pitiful_generator",
+        "industrialforegoing:bioreactor",
+        "industrialforegoing:biofuel_generator",
+        "industrialforegoing:mycelial_reactor",
+        "industrialforegoing:mycelial_furnace",
+        "industrialforegoing:mycelial_slimey",
+        "industrialforegoing:mycelial_culinary",
+        "industrialforegoing:mycelial_potion",
+        "industrialforegoing:mycelial_disenchantment",
+        "industrialforegoing:mycelial_ender",
+        "industrialforegoing:mycelial_explosive",
+        "industrialforegoing:mycelial_frosty",
+        "industrialforegoing:mycelial_halitosis",
+        "industrialforegoing:mycelial_magma",
+        "industrialforegoing:mycelial_pink",
+        "industrialforegoing:mycelial_netherstar",
+        "industrialforegoing:mycelial_death",
+        "industrialforegoing:mycelial_rocket",
+        "industrialforegoing:mycelial_crimed",
+        "industrialforegoing:mycelial_meatallurgic",
+        "industrialforegoing:infinity_charger",
+        "industrialforegoing:fluid_extractor",
+        "industrialforegoing:latex_processing_unit",
+        "industrialforegoing:material_stonework_factory",
+        "industrialforegoing:ore_laser_base",
+        "industrialforegoing:laser_drill",
+        "industrialforegoing:fluid_laser_base",
     ];
     remove_items.forEach(remove_recipe);
 
