@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ev"
+	group: ""
+	id: "1780BA34940895F3"
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		description: ["{ev.gfs.hull.description}"]
+		id: "4CCD0D4900BF94A3"
+		rewards: [{
+			count: 16
+			id: "0F09E79F7E768223"
+			item: "gtceu:titanium_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			id: "513E1331C38A44E3"
+			item: "gtceu:ev_machine_hull"
+			type: "item"
+		}]
+		title: "{ev.gfs.hull.title}"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{ev.gfs.chapter.title}"
+}

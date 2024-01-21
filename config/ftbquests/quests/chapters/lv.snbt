@@ -1,0 +1,388 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lv"
+	group: ""
+	id: "1848A200340151F9"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"40A9D3ADD52871A4"
+				"7015EDFB9220C95B"
+			]
+			description: ["{lv.gfs.hull.description}"]
+			id: "4CCD0D4900BF94A0"
+			rewards: [{
+				count: 16
+				id: "0F09E79F7E768220"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "513E1331C38A44E0"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "{lv.gfs.hull.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"49441C838A255ABB"
+				"4CCD0D4900BF94A0"
+			]
+			id: "723687E1968FD34F"
+			tasks: [{
+				id: "4687BC65142102A0"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"723687E1968FD34F"
+				"40A9D3ADD52871A4"
+			]
+			id: "3C62C7AF12A25C71"
+			tasks: [{
+				id: "3B82A1677E5F9AA2"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "073B075DAACB0515"
+			tasks: [{
+				id: "1C4E72782A441B27"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C62C7AF12A25C71"]
+			id: "0F7DBDC04B35699D"
+			tasks: [{
+				id: "23BF714A4263E75C"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3C62C7AF12A25C71"]
+			id: "3EFD3EEE4D5B0542"
+			optional: true
+			tasks: [{
+				id: "2907CC61A043B97A"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "5A668304DC909AB3"
+			tasks: [{
+				id: "419A517AB6FD22CE"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "341816A41B7AC74A"
+			tasks: [{
+				id: "168B89B0BF6E9F08"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3C62C7AF12A25C71"]
+			id: "1C2C35163D077C5C"
+			tasks: [{
+				id: "354AB3C7D7235275"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "4B07E0B5A77539D2"
+			tasks: [{
+				id: "4E7CDB2F52923B53"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C2C35163D077C5C"
+				"341816A41B7AC74A"
+			]
+			id: "43E762712C052208"
+			tasks: [{
+				id: "389F1D468C545429"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4CCD0D4900BF94A0"]
+			id: "6CE0B241B37C1E94"
+			tasks: [{
+				id: "424000EB68672706"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "3C0C132C72E3FF3A"
+			tasks: [{
+				id: "39A9DD12B5820A07"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C0C132C72E3FF3A"]
+			icon: "gtceu:cupronickel_ingot"
+			id: "2FE50829D8DAE681"
+			tasks: [
+				{
+					id: "54FDF648B6DA5EA0"
+					item: "gtceu:cupronickel_dust"
+					type: "item"
+				}
+				{
+					id: "59D10CF9A7A3D61D"
+					item: "gtceu:cupronickel_ingot"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"43E762712C052208"
+				"2FE50829D8DAE681"
+			]
+			id: "732CE8C207B4A033"
+			tasks: [{
+				id: "44B9B24DA8D59601"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6CE0B241B37C1E94"]
+			icon: "gtceu:gallium_dust"
+			id: "047480DA81B00459"
+			tasks: [
+				{
+					id: "3FAEB3F6C378C037"
+					item: "gtceu:small_gallium_dust"
+					type: "item"
+				}
+				{
+					id: "530607CF2BA001EF"
+					item: "gtceu:gallium_dust"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["732CE8C207B4A033"]
+			icon: "gtceu:electric_blast_furnace"
+			id: "4461F29C4093AAC0"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4F6E619BC9FAA090"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "08CEEE5EE2AB7684"
+					item: { Count: 16b, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4461F29C4093AAC0"
+				"6CE0B241B37C1E94"
+			]
+			icon: "gtceu:arsenic_dust"
+			id: "3A2D40947D5B5AEA"
+			tasks: [
+				{
+					count: 5L
+					id: "5592C7D5018A2025"
+					item: { Count: 5b, id: "gtceu:arsenic_trioxide_dust" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1F000939A8C22863"
+					item: { Count: 2b, id: "gtceu:arsenic_dust" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4461F29C4093AAC0"
+				"3502D1FA9E24E29A"
+			]
+			id: "6D7AA255166E63C7"
+			tasks: [{
+				id: "47E57ECBE59C012E"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"047480DA81B00459"
+				"3A2D40947D5B5AEA"
+			]
+			icon: "gtceu:gallium_arsenide_dust"
+			id: "47B61FB9FF00FBDD"
+			tasks: [
+				{
+					id: "63E15DFB0FD9A370"
+					item: "gtceu:gallium_arsenide_dust"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7B869813ABFB42B5"
+					item: "gtceu:small_gallium_arsenide_dust"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0FC6834107E00DF8"]
+			id: "3D2FE62ACE63A67F"
+			size: 2.0d
+			tasks: [{
+				id: "01D1F1195C4445BA"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["47B61FB9FF00FBDD"]
+			id: "0FC6834107E00DF8"
+			tasks: [{
+				id: "172C0D4DC2942BDD"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D2FE62ACE63A67F"]
+			id: "7DE9562AA110968A"
+			tasks: [{
+				id: "60F094172A704A0A"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4461F29C4093AAC0"]
+			id: "7A3486C039B9077D"
+			tasks: [{
+				id: "40BCA2CA708EC4A2"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6D7AA255166E63C7"]
+			id: "45AF895195ADD4BB"
+			tasks: [{
+				id: "10DC3F99C7B9FA78"
+				item: "exdeorum:golden_mesh"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "20D5F62B40940BBE"
+			tasks: [{
+				id: "7B2B6B89C9646B09"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["723687E1968FD34F"]
+			id: "0948E15895389763"
+			tasks: [{
+				id: "55767097D252B772"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "{lv.gfs.chapter.title}"
+}

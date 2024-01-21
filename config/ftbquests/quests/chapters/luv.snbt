@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "luv"
+	group: ""
+	id: "2EE31AD69F413D7B"
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		description: ["{luv.gfs.hull.description}"]
+		id: "4CCD0D4900BF94A5"
+		rewards: [{
+			count: 16
+			id: "0F09E79F7E768225"
+			item: "gtceu:rhodium_plated_palladium_ingot"
+			type: "item"
+		}]
+		tasks: [{
+			id: "513E1331C38A44E5"
+			item: "gtceu:luv_machine_hull"
+			type: "item"
+		}]
+		title: "{luv.gfs.hull.title}"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{luv.gfs.chapter.title}"
+}

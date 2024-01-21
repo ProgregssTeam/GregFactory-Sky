@@ -1,0 +1,578 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam"
+	group: ""
+	icon: "gtceu:lp_steam_compressor"
+	id: "23851E4171576481"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1BABA00C33BEF6B7"]
+			id: "0B01764C373C6BBF"
+			tasks: [{
+				id: "12FFBC697E2B8668"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_liquid_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["578DA5E75E3FB662"]
+			description: [""]
+			id: "52A43F057A6116B0"
+			tasks: [{
+				id: "60D1A273FA58A612"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"68F28467B39CD0DB"
+				"578DA5E75E3FB662"
+			]
+			id: "21B9197E220A653C"
+			tasks: [{
+				id: "2356C762C79E754E"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["52A43F057A6116B0"]
+			id: "0AB0FCD2A7BA2E6A"
+			optional: true
+			tasks: [{
+				id: "35CD979CB5ED49D0"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"52A43F057A6116B0"
+				"21B9197E220A653C"
+			]
+			id: "225AC4393F6EE812"
+			tasks: [
+				{
+					id: "1601656F3C9607CD"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0959BD0C41EF910C"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["225AC4393F6EE812"]
+			id: "40A9D3ADD52871A4"
+			rewards: [{
+				count: 16
+				id: "748EED7EFD864A7C"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1954AE046553E7A2"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B01764C373C6BBF"]
+			id: "7E17DFABE7E76334"
+			tasks: [{
+				id: "793B324824AD690C"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["404210B29D5A89B1"]
+			id: "77FEF3A94E0BE498"
+			tasks: [{
+				id: "0CA3A07B6FD24EB3"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_extractor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_extractor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"77FEF3A94E0BE498"
+				"444771C9CE1786E7"
+			]
+			id: "4974B33E792591ED"
+			tasks: [{
+				count: 3L
+				id: "7B53322E8A30E806"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B01764C373C6BBF"]
+			id: "5844B9320448E0A3"
+			optional: true
+			tasks: [{
+				id: "12B088369CB54390"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_furnace"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_furnace"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0C652FDEC7AFC683"]
+			id: "444771C9CE1786E7"
+			tasks: [{
+				id: "04C0B515DD8B9A67"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4974B33E792591ED"]
+			id: "24ED11F4503C0637"
+			tasks: [{
+				id: "123CCE9CA90D8C26"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24ED11F4503C0637"]
+			id: "49441C838A255ABB"
+			tasks: [
+				{
+					id: "006CB5FB65FF1DBC"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "5CDF563D7FC2E7DD"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["404210B29D5A89B1"]
+			icon: "gtceu:vacuum_tube"
+			id: "54E081640EA11512"
+			tasks: [
+				{
+					id: "7B11C7311C682C7A"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+				{
+					id: "27BF60BB8BDC4F07"
+					item: "gtceu:glass_tube"
+					type: "item"
+				}
+				{
+					id: "42F5B4DA155FDCFD"
+					item: "gtceu:vacuum_tube"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"444771C9CE1786E7"
+				"25107E1933AA09B0"
+			]
+			id: "7DF09889A6730708"
+			tasks: [{
+				id: "48601316E7088328"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"444771C9CE1786E7"
+				"0CF598C468D55404"
+			]
+			icon: "gtceu:resin_printed_circuit_board"
+			id: "1BD64BCA738C951D"
+			tasks: [
+				{
+					id: "6437F432B783DEC9"
+					item: "gtceu:resin_circuit_board"
+					type: "item"
+				}
+				{
+					id: "67CDEAADD7214382"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7DF09889A6730708"
+				"54E081640EA11512"
+				"49441C838A255ABB"
+				"1BD64BCA738C951D"
+			]
+			id: "7015EDFB9220C95B"
+			size: 2.0d
+			tasks: [{
+				id: "22FBE4C064CEF7E7"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["550C03883F4DAC19"]
+			id: "25107E1933AA09B0"
+			tasks: [{
+				id: "28DCA2BF72F0DE50"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3502D1FA9E24E29A"]
+			id: "2D1B19A193908435"
+			optional: true
+			tasks: [{
+				id: "43CE5D5E806F81C5"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solar_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["52A43F057A6116B0"]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "373396BEF0D77223"
+			tasks: [
+				{
+					id: "18FA1B4CD7BF75DC"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+				{
+					id: "7D2CAFE56FAC0854"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"40A9D3ADD52871A4"
+				"373396BEF0D77223"
+			]
+			id: "3E3065E9A55B9B58"
+			optional: true
+			tasks: [{
+				id: "2E17DA3AD3E38879"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_compressor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_forge_hammer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_alloy_smelter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"55E1A1B9F8C7BEBF"
+				"73632156128B9325"
+				"68F28467B39CD0DB"
+				"578DA5E75E3FB662"
+			]
+			id: "0A4A5572ADB7EDE1"
+			optional: true
+			tasks: [{
+				id: "54F0A159511E8059"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_rock_crusher"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["578DA5E75E3FB662"]
+			id: "2EB993EC22693593"
+			optional: true
+			tasks: [{
+				id: "3893AA48071C87C0"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_sieve"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_sieve"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["40A9D3ADD52871A4"]
+			id: "35E3F3385F246D2E"
+			tasks: [{
+				id: "56E24B0BFF9F2162"
+				item: "exdeorum:iron_mesh"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["35E3F3385F246D2E"]
+			id: "3502D1FA9E24E29A"
+			tasks: [
+				{
+					id: "22C68E7E3400FC76"
+					item: "gtceu:crushed_silver_ore"
+					type: "item"
+				}
+				{
+					id: "27910E90EE7CF796"
+					item: "gtceu:crushed_aluminium_ore"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7E17DFABE7E76334"]
+			icon: "minecraft:piston"
+			id: "578DA5E75E3FB662"
+			tasks: [
+				{
+					id: "07C0F77A997E7749"
+					item: "gtceu:red_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "0E49B7DC04F52A78"
+					item: "minecraft:piston"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52A43F057A6116B0"
+				"21B9197E220A653C"
+			]
+			id: "0CF598C468D55404"
+			tasks: [{
+				id: "4A2EFA197B3C4EE9"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["40A9D3ADD52871A4"]
+			id: "404210B29D5A89B1"
+			tasks: [
+				{
+					id: "7E1A7BA33312ACF8"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+				{
+					id: "051809A9AAC93D0A"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+	]
+	title: "{steam.gfs.chapter.title}"
+}

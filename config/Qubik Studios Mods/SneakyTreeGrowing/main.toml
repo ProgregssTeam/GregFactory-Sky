@@ -1,0 +1,18 @@
+
+[SneakyTreeGrowing]
+	#Increasing this value will change the area-of-effect from the mod
+	#Default value: 6
+	#Range: 1 ~ 1000
+	Tree-Meal-Radius = 6
+	#Changing this value will change the chance if a Bone Meal effect gets applied or not
+	#Default value: 15
+	#Range: 1 ~ 100
+	Tree-Meal-Chance = 15
+	#Experimental In-Dev Features. Use with caution!
+	#Removes one Bone Meal from player inventory when Bone Meal gets applied over Sneaky Tree Growing
+	#Default value: false
+	Use-Inventory-Bone-Meal = false
+	#Removes more Hunger when sneaking and effect gets applied
+	#Default value: true
+	Remove-Hunger = true
+

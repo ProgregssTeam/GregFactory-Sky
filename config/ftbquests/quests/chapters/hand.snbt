@@ -1,0 +1,613 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hand"
+	group: ""
+	icon: "minecraft:oak_log"
+	id: "0E8E61B9938E2C30"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{hand.gfs.log.description}"]
+			id: "04C85EEBF3AD4BD3"
+			rewards: [{
+				count: 2
+				id: "13CF8C8986A9F539"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "153EBFA0D2EAFD2E"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			title: "{hand.gfs.log.title}"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04C85EEBF3AD4BD3"]
+			description: ["{hand.gfs.crafting_table.description}"]
+			id: "0D9A7CC2DD21AF8C"
+			tasks: [{
+				id: "0393A383E2DB886B"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "{hand.gfs.crafting_table.title}"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D9A7CC2DD21AF8C"]
+			description: ["{hand.gfs.crook.description}"]
+			id: "3C7A17CD978B430B"
+			tasks: [{
+				id: "2B4E50B76E29389F"
+				item: {
+					Count: 1b
+					id: "exdeorum:crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{hand.gfs.wooden_crook.title}"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D9A7CC2DD21AF8C"]
+			description: ["{hand.gfs.oak_crucible.description}"]
+			id: "6E20E2FD9C9CFB46"
+			tasks: [{
+				id: "1122DDDE0BC2C8DA"
+				item: "exdeorum:oak_crucible"
+				type: "item"
+			}]
+			title: "{hand.gfs.oak_crucible.title}"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0D9A7CC2DD21AF8C"]
+			description: ["{hand.gfs.oak_barrel.description}"]
+			id: "4BD86AC8A8BC1D19"
+			tasks: [{
+				id: "40C054F8509B1F05"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
+			title: "{hand.gfs.oak_barrel.title}"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3C7A17CD978B430B"]
+			description: ["{hand.gfs.silk_worm.description}"]
+			id: "0A4B00B4532C265B"
+			tasks: [{
+				id: "53D738793BF9B4FB"
+				item: "exdeorum:silk_worm"
+				type: "item"
+			}]
+			title: "{hand.gfs.silk_worm.title}"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A4B00B4532C265B"]
+			description: ["{hand.gfs.string.description}"]
+			id: "2BA6A93A3C02426A"
+			tasks: [{
+				count: 32L
+				id: "3E01C9CC9FF30371"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			title: "{hand.gfs.string.title}"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BA6A93A3C02426A"]
+			description: ["{hand.gfs.oak_sieve.description}"]
+			icon: "exdeorum:string_mesh"
+			id: "4D7A244365443F22"
+			tasks: [
+				{
+					count: 25L
+					id: "38F312C9E0840F4E"
+					item: "exdeorum:oak_sieve"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "5E169C393D2FA8F6"
+					item: "exdeorum:string_mesh"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.oak_sieve.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4D7A244365443F22"
+				"5967A6B261A5A934"
+			]
+			description: ["{hand.gfs.cobblestone.description}"]
+			icon: "minecraft:cobblestone"
+			id: "2A535A169C6AB9F4"
+			rewards: [{
+				count: 16
+				id: "7ECE92FE96300C81"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2D5828DC32BD3241"
+					item: "exdeorum:tuff_pebble"
+					type: "item"
+				}
+				{
+					id: "318A4715008F9527"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.cobblestone.title}"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A535A169C6AB9F4"]
+			description: ["{hand.gfs.furnace.description}"]
+			id: "7DFA26B22E8322CC"
+			tasks: [{
+				id: "211EE42F2DA6D683"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "{hand.gfs.furnace.title}"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A535A169C6AB9F4"]
+			description: ["{hand.gfs.gravel.description}"]
+			id: "624F48DFDE345DD0"
+			rewards: [{
+				count: 16
+				id: "15436300082A671D"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1750C8C9E0762FEB"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			title: "{hand.gfs.gravel.title}"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"624F48DFDE345DD0"
+				"4D7A244365443F22"
+			]
+			description: ["{hand.gfs.ores.description}"]
+			id: "4487A713E7BBB36A"
+			tasks: [
+				{
+					id: "04947689921D5AFC"
+					item: "gtceu:crushed_coal_ore"
+					type: "item"
+				}
+				{
+					id: "49D0EFEE84D6D24F"
+					item: "gtceu:crushed_tin_ore"
+					type: "item"
+				}
+				{
+					id: "7488EFB073F71F37"
+					item: "gtceu:crushed_iron_ore"
+					type: "item"
+				}
+				{
+					id: "494B817ED7BA1912"
+					item: "minecraft:flint"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.ores.title}"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4487A713E7BBB36A"
+				"7DFA26B22E8322CC"
+			]
+			description: ["{hand.gfs.tin_iron_ingots.description}"]
+			id: "095ECBE114359D9C"
+			tasks: [
+				{
+					id: "2490AA1E8958CBE1"
+					item: "gtceu:tin_ingot"
+					type: "item"
+				}
+				{
+					id: "493627DA8ED0991C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.tin_iron_ingots.title}"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["095ECBE114359D9C"]
+			description: ["{hand.gfs.gttools.description}"]
+			id: "26C84C80BD20801B"
+			tasks: [{
+				id: "1A17078D266DFA50"
+				title: "GT Tools"
+				type: "checkmark"
+			}]
+			title: "{hand.gfs.gttools.title}"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["624F48DFDE345DD0"]
+			description: ["{hand.gfs.sand.description}"]
+			id: "3842C519140388CD"
+			rewards: [{
+				count: 16
+				id: "523E9D0FC8AFE645"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			tasks: [{
+				id: "352C4E22AD1E93ED"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			title: "{hand.gfs.sand.title}"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"095ECBE114359D9C"
+				"26C84C80BD20801B"
+			]
+			description: ["{hand.gfs.tin_iron_dusts.description}"]
+			id: "2870C029E218FA9E"
+			tasks: [
+				{
+					id: "12B7B2648C254109"
+					item: "gtceu:tin_dust"
+					type: "item"
+				}
+				{
+					id: "5753386BED7BA9E8"
+					item: "gtceu:iron_dust"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.tin_iron_dusts.title}"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2870C029E218FA9E"]
+			description: ["{hand.gfs.tin_alloy.description}"]
+			icon: "gtceu:tin_alloy_ingot"
+			id: "0A31F9D939065674"
+			tasks: [
+				{
+					id: "20487752AE53D03B"
+					item: "gtceu:tin_alloy_dust"
+					type: "item"
+				}
+				{
+					id: "403B067E7FEF3707"
+					item: "gtceu:tin_alloy_ingot"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.tin_alloy.title}"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4BD86AC8A8BC1D19"]
+			description: ["{hand.gfs.dirt.description}"]
+			id: "5967A6B261A5A934"
+			tasks: [{
+				id: "5C06DBD4D083128A"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			title: "{hand.gfs.dirt.title}"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3842C519140388CD"]
+			description: ["{hand.gfs.dust.description}"]
+			id: "76BD02EF86838EA9"
+			tasks: [{
+				id: "5333D7B822B6ED10"
+				item: "exdeorum:dust"
+				type: "item"
+			}]
+			title: "{hand.gfs.dust.title}"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["26C84C80BD20801B"]
+			description: ["{hand.gfs.bucket.description}"]
+			id: "5DD1EAA48D036DF0"
+			tasks: [{
+				id: "73F8E1066137DC4D"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			title: "{hand.gfs.bucket.title}"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5DD1EAA48D036DF0"
+				"6E20E2FD9C9CFB46"
+			]
+			description: ["{hand.gfs.water_bucket.description}"]
+			id: "55E1A1B9F8C7BEBF"
+			tasks: [{
+				id: "11DE93DEDE6FA3C5"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "{hand.gfs.water_bucket.title}"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"76BD02EF86838EA9"
+				"55E1A1B9F8C7BEBF"
+			]
+			description: ["{hand.gfs.clay.description}"]
+			id: "760C86419A7EB53E"
+			tasks: [{
+				id: "6E771401287AD6F8"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			title: "{hand.gfs.clay.title}"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A31F9D939065674"]
+			description: ["{hand.gfs.flint_mesh.description}"]
+			id: "77BA1EE9AC0180F3"
+			tasks: [{
+				id: "6CB130A6229C89D1"
+				item: "exdeorum:flint_mesh"
+				type: "item"
+			}]
+			title: "{hand.gfs.flint_mesh.title}"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["77BA1EE9AC0180F3"]
+			description: ["{hand.gfs.copper_crushed_ore.description}"]
+			id: "1D3B3A1618FB4B1D"
+			tasks: [{
+				id: "50BC1676B8CA589C"
+				item: "gtceu:crushed_copper_ore"
+				type: "item"
+			}]
+			title: "{hand.gfs.copper_crushed_ore.title}"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1D3B3A1618FB4B1D"]
+			description: ["{hand.gfs.bronze.description}"]
+			icon: "gtceu:bronze_ingot"
+			id: "1BABA00C33BEF6B7"
+			rewards: [{
+				count: 16
+				id: "2FD07B7A4BFA5CEB"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "431A88696F960151"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "1484DDDDDC4ECD04"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			title: "{hand.gfs.bronze.title}"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["26C84C80BD20801B"]
+			description: ["{hand.gfs.cauldron.description}"]
+			id: "0802F009B50804D1"
+			tasks: [{
+				id: "5860BED7E33DDA3A"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			title: "{hand.gfs.cauldron.title}"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3842C519140388CD"
+				"77BA1EE9AC0180F3"
+			]
+			description: ["{hand.gfs.diamond.description}"]
+			id: "68F28467B39CD0DB"
+			tasks: [{
+				id: "386893F15353FA9D"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "{hand.gfs.diamond.title}"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4D7A244365443F22"
+				"5967A6B261A5A934"
+			]
+			icon: "exdeorum:grass_seeds"
+			id: "550C03883F4DAC19"
+			tasks: [
+				{
+					id: "18B5B1D28870D63A"
+					item: "exdeorum:grass_seeds"
+					type: "item"
+				}
+				{
+					id: "7224B599232129C0"
+					item: "exdeorum:mycelium_spores"
+					type: "item"
+				}
+				{
+					id: "2A5B86A4E775EF6F"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "70D9E64A29F871EC"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"55E1A1B9F8C7BEBF"
+				"550C03883F4DAC19"
+			]
+			icon: "exdeorum:witch_water_bucket"
+			id: "4D77CE5E6152C0CA"
+			tasks: [
+				{
+					id: "27833B7E5E202909"
+					item: "exdeorum:witch_water_bucket"
+					type: "item"
+				}
+				{
+					id: "1F32BA962CD5E500"
+					item: "minecraft:brown_mushroom"
+					type: "item"
+				}
+				{
+					id: "45DE3D7A5BEF0929"
+					item: "minecraft:red_mushroom"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["55E1A1B9F8C7BEBF"]
+			id: "0C652FDEC7AFC683"
+			tasks: [
+				{
+					id: "1CBA405A596B1681"
+					item: "minecraft:slime_block"
+					type: "item"
+				}
+				{
+					id: "37F98C452404E430"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["760C86419A7EB53E"]
+			id: "5CB9A43886802721"
+			tasks: [
+				{
+					id: "3C8C906B6A934B1B"
+					item: "exdeorum:unfired_porcelain_crucible"
+					type: "item"
+				}
+				{
+					id: "30D385AED1B53955"
+					item: "exdeorum:unfired_porcelain_crucible"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5CB9A43886802721"]
+			id: "73632156128B9325"
+			tasks: [{
+				id: "5EC50E55B03D73EE"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4D77CE5E6152C0CA"]
+			id: "477113C24CAC4587"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "0A4BF079CB3ECD43"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "675976FDD14446B8"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+	]
+	title: "{hand.gfs.chapter.title}"
+}

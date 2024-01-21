@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gfs"
+	group: ""
+	icon: "gtceu:chocolate_coin"
+	id: "542BF2FA5C9CAE77"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["{start.gfs.welcome.description}"]
+		id: "207B3AC75D3EBA74"
+		size: 3.0d
+		tasks: [{
+			id: "38CC3BF6E8E53270"
+			title: "Have fun!"
+			type: "checkmark"
+		}]
+		title: "{start.gfs.welcome.title}"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{start.gfs.chapter.title}"
+}
