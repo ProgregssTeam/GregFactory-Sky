@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: ""
+	filename: "energy"
 	group: ""
 	icon: "gtceu:lv_steam_turbine"
 	id: "32DCB5F5DFE3930C"

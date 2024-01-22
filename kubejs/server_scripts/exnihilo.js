@@ -90,8 +90,6 @@ ServerEvents.recipes(event => {
             steam_recipe.chancedOutput(itemchance_table[i][0], itemchance_table[i][1] * 10000, 500);
     }
 
-    // Dirt
-
     // Gravel
     // String
     const mesh_1_gravel_table = [
@@ -106,23 +104,22 @@ ServerEvents.recipes(event => {
         ["gtceu:crushed_bentonite_ore", 0.3],
         ["gtceu:crushed_salt_ore", 0.3],
         ["gtceu:crushed_rock_salt_ore", 0.3],
-        ["gtceu:crushed_glauconite_sand_ore", 0.2],
         ["gtceu:crushed_granitic_mineral_sand_ore", 0.2],
         ["gtceu:crushed_basaltic_mineral_sand_ore", 0.2],
         ["gtceu:crushed_soapstone_ore", 0.1],
+        ["gtceu:crushed_talc_ore", 0.1],
+        ["gtceu:crushed_glauconite_sand_ore", 0.15],
     ];
 
     // Tin Alloy
     const mesh_2_gravel_table = [
         ["minecraft:flint", 0.25],
         ["gtceu:crushed_copper_ore", 0.4],
-        ["gtceu:crushed_pyrite_ore", 0.4],
         ["gtceu:crushed_goethite_ore", 0.4],
         ["gtceu:crushed_stibnite_ore", 0.4],
         ["gtceu:crushed_redstone_ore", 0.9],
         ["gtceu:crushed_calcite_ore", 0.9],
         ["gtceu:crushed_bornite_ore", 0.3],
-        ["gtceu:crushed_chalcocite_ore", 0.3],
         ["gtceu:crushed_tetrahedrite_ore", 0.3],
         ["gtceu:crushed_magnesite_ore", 0.2],
         ["gtceu:crushed_malachite_ore", 0.3],
@@ -268,4 +265,62 @@ ServerEvents.recipes(event => {
     add_sieve_recipe("dust", "exdeorum:dust", mesh_4_dust_table, "golden");
     add_sieve_recipe("dust", "exdeorum:dust", mesh_5_dust_table, "diamond");
     add_sieve_recipe("dust", "exdeorum:dust", mesh_6_dust_table, "netherite");
+
+    // Crushed Netherrack
+    event.recipes.gtceu.rock_breaker("gtceu:rock_breaker/netherrack")
+        .notConsumable("minecraft:netherrack")
+        .itemOutputs("minecraft:netherrack")
+    ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
+    ["addData(java.lang.String,java.lang.String)"]("fluidB", "exdeorum:witch_water")
+        .EUt(30)
+        .duration(16);
+
+    event.recipes.gtceu.forge_hammer("gtceu:forge_hammer/netherrack_to_crushed_netherrack")
+        .itemInputs("minecraft:netherrack")
+        .itemOutputs("exdeorum:crushed_netherrack")
+        .EUt(16)
+        .duration(10);
+
+    // String
+    const mesh_1_crushed_netherrack_table = [
+    ];
+
+    // Tin Alloy
+    const mesh_2_crushed_netherrack_table = [
+    ];
+
+    // Steel
+    const mesh_3_crushed_netherrack_table = [
+        ["gtceu:crushed_sulfur_ore", 0.3],
+        ["gtceu:crushed_cobalt_ore", 0.1],
+        ["gtceu:crushed_cobaltite_ore", 0.1],
+        ["gtceu:crushed_sphalerite_ore", 0.1],
+        ["gtceu:crushed_chalcocite_ore", 0.1],
+        ["gtceu:crushed_pyrite_ore", 0.1],
+    ];
+
+    // Aluminium
+    const mesh_4_crushed_netherrack_table = [
+        ["gtceu:crushed_sulfur_ore", 0.4],
+        ["gtceu:crushed_cobalt_ore", 0.2],
+        ["gtceu:crushed_cobaltite_ore", 0.2],
+        ["gtceu:crushed_sphalerite_ore", 0.2],
+        ["gtceu:crushed_chalcocite_ore", 0.2],
+        ["gtceu:crushed_pyrite_ore", 0.1],
+    ];
+
+    // Stainless Steel
+    const mesh_5_crushed_netherrack_table = [
+    ];
+
+    // Titanium
+    const mesh_6_crushed_netherrack_table = [
+    ];
+
+    add_sieve_recipe("crushed_netherrack", "exdeorum:crushed_netherrack", mesh_1_crushed_netherrack_table, "string");
+    add_sieve_recipe("crushed_netherrack", "exdeorum:crushed_netherrack", mesh_2_crushed_netherrack_table, "flint");
+    add_sieve_recipe("crushed_netherrack", "exdeorum:crushed_netherrack", mesh_3_crushed_netherrack_table, "iron");
+    add_sieve_recipe("crushed_netherrack", "exdeorum:crushed_netherrack", mesh_4_crushed_netherrack_table, "golden");
+    add_sieve_recipe("crushed_netherrack", "exdeorum:crushed_netherrack", mesh_5_crushed_netherrack_table, "diamond");
+    add_sieve_recipe("crushed_netherrack", "exdeorum:crushed_netherrack", mesh_6_crushed_netherrack_table, "netherite");
 });
