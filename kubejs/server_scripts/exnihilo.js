@@ -137,6 +137,8 @@ ServerEvents.recipes(event => {
         ["gtceu:crushed_silver_ore", 0.25],
         ["gtceu:crushed_gold_ore", 0.15],
         ["gtceu:crushed_electrotine_ore", 0.15],
+        ["gtceu:crushed_diamond_ore", 0.1],
+        ["gtceu:crushed_graphite_ore", 0.1],
     ];
 
     // Aluminium
