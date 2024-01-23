@@ -201,6 +201,10 @@ ServerEvents.recipes(event => {
 
     // Aluminium
     const mesh_4_sand_table = [
+        ["minecraft:quartz", 0.25],
+        ["gtceu:quartzite_gem", 0.25],
+        ["ae2:certus_quartz_crystal", 0.2],
+        ["ae2:charged_certus_quartz_crystal", 0.05],
     ];
 
     // Stainless Steel
@@ -219,6 +223,12 @@ ServerEvents.recipes(event => {
     add_sieve_recipe("sand", "minecraft:sand", mesh_6_sand_table, "netherite");
 
     // Dust
+
+    event.recipes.gtceu.forge_hammer("gtceu:forge_hammer/sand_to_dust")
+        .itemInputs("minecraft:sand")
+        .itemOutputs("exdeorum:dust")
+        .EUt(16)
+        .duration(10);
 
     // String
     const mesh_1_dust_table = [
