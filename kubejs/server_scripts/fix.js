@@ -37,4 +37,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:obsidian_dust")
         .duration(240)
         .EUt(30);
+
+    event.shaped(
+        "minecraft:elytra",
+        ["ABA", "ACA", "ABA"],
+        {
+            A: "minecraft:phantom_membrane",
+            B: "minecraft:string",
+            C: "ironjetpacks:strap"
+        }
+    );
 });

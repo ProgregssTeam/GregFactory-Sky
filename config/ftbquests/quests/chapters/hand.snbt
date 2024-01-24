@@ -612,7 +612,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["550C03883F4DAC19"]
+			dependencies: ["3F12C3D49E70D9EF"]
 			id: "5C0CB08770D8DC20"
 			tasks: [{
 				id: "52F2E78C031748F5"
@@ -621,6 +621,21 @@
 			}]
 			x: 6.0d
 			y: -4.0d
+		}
+		{
+			dependencies: [
+				"550C03883F4DAC19"
+				"55E1A1B9F8C7BEBF"
+			]
+			id: "3F12C3D49E70D9EF"
+			tasks: [{
+				count: 2L
+				id: "66D458B2261E4998"
+				item: "minecraft:cow_spawn_egg"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
 		}
 	]
 	title: "{hand.gfs.chapter.title}"
