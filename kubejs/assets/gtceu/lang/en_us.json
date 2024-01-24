@@ -1,6 +1,8 @@
 {
     "material.quartz_glass": "Quartz Glass",
     "material.mysterious_matter": "Mysterious Matter",
+    "material.gtceu.strange_blue_matter": "Strange Blue Matter",
+    "material.gtceu.rare_blue_matter": "Rare Blue Matter",
     "gtceu.inscriber": "Inscriber",
     "block.gtceu.lv_inscriber": "Basic Inscriber",
     "block.gtceu.mv_inscriber": "§bAdvanced Inscriber§r",

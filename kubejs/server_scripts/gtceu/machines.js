@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         "luv": "niobium_titanium",
         "zpm": "vanadium_gallium",
         "uv": "yttrium_barium_cuprate"
-    }
+    };
     const voltages = [
         "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv"
     ];
