@@ -90,6 +90,49 @@ ServerEvents.recipes(event => {
             steam_recipe.chancedOutput(itemchance_table[i][0], itemchance_table[i][1] * 10000, 500);
     }
 
+    // Dirt
+    /*// String
+    const mesh_1_dirt_table = [
+    ];
+
+    // Tin Alloy
+    const mesh_2_dirt_table = [
+    ];
+
+    // Steel
+    const mesh_3_dirt_table = [
+    ];
+
+    // Aluminium
+    const mesh_4_dirt_table = [
+    ];
+
+    // Stainless Steel
+    const mesh_5_dirt_table = [
+    ];
+
+    // Titanium
+    const mesh_6_dirt_table = [
+    ];
+
+    add_sieve_recipe("dirt", "minecraft:dirt", mesh_1_dirt_table, "string");
+    add_sieve_recipe("dirt", "minecraft:dirt", mesh_2_dirt_table, "flint");
+    add_sieve_recipe("dirt", "minecraft:dirt", mesh_3_dirt_table, "iron");
+    add_sieve_recipe("dirt", "minecraft:dirt", mesh_4_dirt_table, "golden");
+    add_sieve_recipe("dirt", "minecraft:dirt", mesh_5_dirt_table, "diamond");
+    add_sieve_recipe("dirt", "minecraft:dirt", mesh_6_dirt_table, "netherite");*/
+    event.custom({
+        type: "exdeorum:sieve",
+        ingredient: { item: "minecraft:dirt" },
+        mesh: "exdeorum:flint_mesh",
+        result: "minecraft:cocoa_beans",
+        result_amount: {
+            type: "minecraft:binomial",
+            n: 1.0,
+            p: 0.08
+        }
+    });
+
     // Gravel
     // String
     const mesh_1_gravel_table = [
@@ -308,8 +351,11 @@ ServerEvents.recipes(event => {
         ["gtceu:crushed_cobalt_ore", 0.1],
         ["gtceu:crushed_cobaltite_ore", 0.1],
         ["gtceu:crushed_sphalerite_ore", 0.1],
-        ["gtceu:crushed_chalcocite_ore", 0.1],
         ["gtceu:crushed_pyrite_ore", 0.1],
+        ["gtceu:crushed_blue_topaz_ore", 0.15],
+        ["gtceu:crushed_topaz_ore", 0.1],
+        ["gtceu:crushed_chalcocite_ore", 0.1],
+        ["gtceu:crushed_bornite_ore", 0.05],
     ];
 
     // Aluminium
@@ -320,6 +366,10 @@ ServerEvents.recipes(event => {
         ["gtceu:crushed_sphalerite_ore", 0.2],
         ["gtceu:crushed_chalcocite_ore", 0.2],
         ["gtceu:crushed_pyrite_ore", 0.1],
+        ["gtceu:crushed_saltpeter_ore", 0.3],
+        ["gtceu:crushed_diatomite_ore", 0.2],
+        ["gtceu:crushed_electrotine_ore", 0.2],
+        ["gtceu:crushed_alunite_ore", 0.1],
     ];
 
     // Stainless Steel

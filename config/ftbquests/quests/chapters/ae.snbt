@@ -4,8 +4,17 @@
 	filename: "ae"
 	group: ""
 	id: "50D8F0E815721DFB"
-	order_index: 13
+	order_index: 12
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "330D9E95164F5A1C"
+		tasks: [{
+			id: "27BDA2DA33B7B2D9"
+			item: "ae2:controller"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "应用能源"
 }
