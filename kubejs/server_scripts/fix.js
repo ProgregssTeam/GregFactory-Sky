@@ -31,4 +31,10 @@ ServerEvents.recipes(event => {
         ingredient: { tag: "forge:mushrooms" },
         result: "minecraft:slime_block"
     });
+
+    event.recipes.gtceu.macerator("gtceu:macerator/macerate_obsidian")
+        .itemInputs("minecraft:obsidian")
+        .itemOutputs("gtceu:obsidian_dust")
+        .duration(240)
+        .EUt(30);
 });

@@ -17,9 +17,9 @@ ServerEvents.recipes(event => {
     function add_void_miner_recipe(name, eu, index, table) {
         let recipe = event.recipes.gtceu.void_miner("void_miner_" + name + index)
             .inputFluids(Fluid.of(tableList.basic_table.input, 100))
-            .notConsumable(InputItem.of(table.input))
+            .chancedInput(InputItem.of(table.input), 400, 0)
             .duration(30)
-            .EUt(eu);
+            .EUt(eu)
         let output_table = tableList.basic_table.output.concat(table.output);
         output_table.forEach(item => {
             recipe.chancedOutput(item[0], item[1] * 10000, item[1] * 2000);

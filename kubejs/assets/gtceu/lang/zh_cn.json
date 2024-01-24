@@ -1,6 +1,8 @@
 {
     "material.gtceu.quartz_glass": "石英玻璃",
     "material.gtceu.mysterious_matter": "神秘物质",
+    "material.gtceu.strange_blue_matter": "奇怪的蓝色物质",
+    "material.gtceu.rare_blue_matter": "稀有的蓝色物质",
     "gtceu.inscriber": "压印器",
     "block.gtceu.lv_inscriber": "基础压印器",
     "block.gtceu.mv_inscriber": "§b进阶压印器§r",
