@@ -170,17 +170,17 @@ ServerEvents.recipes(event => {
         .EUt(480)
         .duration(240);
     event.recipes.gtceu.assembler("gtceu:chest")
-        .itemInputs("gtceu:hv_machine_hull", "ae2:terminal", "ae2:engineering_processor", "2x ae2:fluix_glass_cable", "#balm:wooden_chests")
+        .itemInputs("gtceu:hv_machine_hull", "ae2:terminal", "ae2:engineering_processor", "2x ae2:fluix_glass_cable", "#forge:chests/wooden")
         .itemOutputs("ae2:chest")
         .EUt(480)
         .duration(200);
     event.recipes.gtceu.assembler("gtceu:drive")
-        .itemInputs("gtceu:hv_machine_hull", "4x ae2:engineering_processor", "4x ae2:fluix_glass_cable", "2x ae2:quartz_glass", "#balm:wooden_chests")
+        .itemInputs("gtceu:hv_machine_hull", "4x ae2:engineering_processor", "4x ae2:fluix_glass_cable", "2x ae2:quartz_glass", "#forge:chests/wooden")
         .itemOutputs("ae2:drive")
         .EUt(480)
         .duration(200);
     event.recipes.gtceu.assembler("gtceu:ex_drive")
-        .itemInputs("gtceu:ev_machine_hull", "8x ae2:engineering_processor", "12x ae2:fluix_glass_cable", "4x ae2:quartz_glass", "2x #balm:wooden_chests")
+        .itemInputs("gtceu:ev_machine_hull", "8x ae2:engineering_processor", "12x ae2:fluix_glass_cable", "4x ae2:quartz_glass", "2x #forge:chests/wooden")
         .itemOutputs("expatternprovider:ex_drive")
         .EUt(1920)
         .duration(400);
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
             E: "gtceu:hv_machine_hull",
             F: "ae2:formation_core",
             G: "ae2:fluix_glass_cable",
-            H: "#balm:wooden_chests"
+            H: "#forge:chests/wooden"
         }
     );
     event.shaped(
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
             E: "gtceu:ev_machine_hull",
             F: "ae2:formation_core",
             G: "ae2:fluix_glass_cable",
-            H: "#balm:wooden_chests"
+            H: "#forge:chests/wooden"
         }
     );
     event.shaped(
@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
             E: "gtceu:hv_machine_hull",
             F: "ae2:formation_core",
             G: "ae2:fluix_glass_cable",
-            H: "#balm:wooden_chests"
+            H: "#forge:chests/wooden"
         }
     );
     event.shaped(
@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
             E: "gtceu:ev_machine_hull",
             F: "ae2:formation_core",
             G: "ae2:fluix_glass_cable",
-            H: "#balm:wooden_chests"
+            H: "#forge:chests/wooden"
         }
     );
     event.shaped(
@@ -275,7 +275,7 @@ ServerEvents.recipes(event => {
             A: "gtceu:stainless_steel_plate",
             B: "ae2:fluix_glass_cable",
             C: "ae2:annihilation_core",
-            D: "#balm:wooden_chests"
+            D: "#forge:chests/wooden"
         }
     );
     event.shaped(
@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
             A: "gtceu:stainless_steel_plate",
             B: "ae2:fluix_glass_cable",
             C: "ae2:formation_core",
-            D: "#balm:wooden_chests"
+            D: "#forge:chests/wooden"
         }
     );
     event.shaped(
