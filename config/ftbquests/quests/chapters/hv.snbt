@@ -85,6 +85,84 @@
 			x: 2.0d
 			y: -6.0d
 		}
+		{
+			dependencies: [
+				"3AFB64FA91EB1970"
+				"084ED243F3910609"
+			]
+			id: "76F1BD6A53F3A7C7"
+			tasks: [{
+				id: "19CDE160019B1491"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3AFB64FA91EB1970"
+				"084ED243F3910609"
+			]
+			id: "17F8ED5173740B84"
+			tasks: [{
+				id: "2CFFD93FB431AC36"
+				item: "gtceu:hv_inscriber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3623559FFADCD017"
+				"3D2FE62ACE63A67F"
+			]
+			id: "1F4ED8684BCBE0A1"
+			tasks: [{
+				id: "1A9B0A08E4CC20C5"
+				item: "gtceu:hv_emitter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5B8853C0D277115D"
+				"1F4ED8684BCBE0A1"
+			]
+			id: "590F84ED68BC94E6"
+			tasks: [{
+				id: "517E9EDBA2D481B6"
+				item: "gtceu:hv_laser_engraver"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["28C6A853DA0A0EE9"]
+			id: "26B20A94E4C6BEDD"
+			tasks: [{
+				id: "1E91FFC7AF82F0C4"
+				item: "gtceu:hv_chemical_reactor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["762E819B112F3B00"]
+			id: "6A969C0E22B28686"
+			tasks: [{
+				id: "4AD9C68D2DE40957"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
 	]
 	title: "{hv.gfs.chapter.title}"
 }

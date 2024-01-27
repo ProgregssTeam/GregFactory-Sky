@@ -17,13 +17,13 @@
       "item": "industrialforegoing:range_addon11"
     },
     {
-      "tag": "forge:gears/gold"
+      "tag": "forge:gears/aluminium"
     },
     {
-      "tag": "forge:gears/gold"
+      "tag": "forge:gears/aluminium"
     },
     {
-      "tag": "forge:gears/gold"
+      "tag": "forge:gears/aluminium"
     }
   ],
   "inputFluid": "{Amount:2000,FluidName:\"industrialforegoing:pink_slime\"}",

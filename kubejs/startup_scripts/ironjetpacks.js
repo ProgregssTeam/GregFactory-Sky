@@ -1,3 +1,0 @@
-ItemEvents.modification(event => {
-
-});

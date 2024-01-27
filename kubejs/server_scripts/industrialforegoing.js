@@ -55,4 +55,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("industrialforegoing:machine_frame_pity")
         .EUt(120)
         .duration(200);
+
+    event.replaceInput({ mod: "industrialforegoing" }, "#forge:gears/gold", "#forge:gears/aluminium");
 });

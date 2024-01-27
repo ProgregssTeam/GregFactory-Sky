@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
         .itemInputs("minecraft:obsidian")
         .itemOutputs("gtceu:obsidian_dust")
         .duration(240)
+        .dimension("the_end")
         .EUt(30);
 
     event.shaped(
@@ -45,6 +46,14 @@ ServerEvents.recipes(event => {
             A: "minecraft:phantom_membrane",
             B: "minecraft:string",
             C: "ironjetpacks:strap"
+        }
+    );
+
+    event.shaped(
+        "4x minecraft:chest",
+        ["AAA", "A A", "AAA"],
+        {
+            A: "#minecraft:logs"
         }
     );
 });
