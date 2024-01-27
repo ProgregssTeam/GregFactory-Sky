@@ -1,6 +1,8 @@
 /*
 * exnihilo.js - Modify recipes about Ex Nihilo.
 */
+const RockBreakerCondition = Java.loadClass("com.gregtechceu.gtceu.common.recipe.RockBreakerCondition");
+
 ServerEvents.recipes(event => {
     function remove_recipe(name) {
         event.remove({ output: name });
@@ -326,6 +328,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.rock_breaker("gtceu:rock_breaker/netherrack")
         .notConsumable("minecraft:netherrack")
         .itemOutputs("minecraft:netherrack")
+        .addCondition(RockBreakerCondition.INSTANCE)
     ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
     ["addData(java.lang.String,java.lang.String)"]("fluidB", "exdeorum:witch_water")
         .EUt(30)
@@ -391,6 +394,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.rock_breaker("gtceu:rock_breaker/end_stone")
         .notConsumable("minecraft:end_stone")
         .itemOutputs("minecraft:end_stone")
+        .addCondition(RockBreakerCondition.INSTANCE)
     ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
     ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water")
         .EUt(120)
