@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
             .duration(160)
             .EUt(30);
         itemchance_table.forEach(itemchance =>
-            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, 200));
+            recipe.chancedOutput(itemchance[0], itemchance[1] * 10000, itemchance[1] * 2000));
 
         // Add recipe for GT steam machines, which have 9 output slots
         let steam_recipe = event.recipes.gtceu.steam_sieve("steam_sieve_" + name + "_" + mesh)
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
             .duration(200)
             .EUt(7);
         for (let i = 0; i < itemchance_table.length && i < 9; i++)
-            steam_recipe.chancedOutput(itemchance_table[i][0], itemchance_table[i][1] * 10000, 500);
+            steam_recipe.chancedOutput(itemchance_table[i][0], itemchance_table[i][1] * 10000, 0);
     }
 
     // Dirt
@@ -312,7 +312,7 @@ ServerEvents.recipes(event => {
         ["minecraft:redstone", 0.4],
         ["minecraft:glowstone_dust", 0.4],
         ["ae2:sky_dust", 0.3],
-        ["gtceu:strange_blue_matter_dust", 0.01],
+        ["gtceu:strange_blue_matter_dust", 0.005],
     ];
 
     add_sieve_recipe("dust", "exdeorum:dust", mesh_1_dust_table, "string");
@@ -430,6 +430,13 @@ ServerEvents.recipes(event => {
 
     // Titanium
     const mesh_6_crushed_end_stone_table = [
+        ["gtceu:crushed_bauxite_ore", 0.55],
+        ["gtceu:crushed_ilmenite_ore", 0.4],
+        ["gtceu:crushed_magnetite_ore", 0.3],
+        ["gtceu:crushed_vanadium_magnetite_ore", 0.2],
+        ["gtceu:crushed_chromite_ore", 0.2],
+        ["gtceu:crushed_gold_ore", 0.1],
+        ["gtceu:crushed_platinum_ore", 0.15],
     ];
 
     add_sieve_recipe("crushed_end_stone", "exdeorum:crushed_end_stone", mesh_1_crushed_end_stone_table, "string");

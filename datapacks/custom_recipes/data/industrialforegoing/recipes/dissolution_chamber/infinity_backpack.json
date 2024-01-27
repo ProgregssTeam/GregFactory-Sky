@@ -17,13 +17,13 @@
       "item": "industrialforegoing:common_black_hole_tank"
     },
     {
-      "tag": "forge:gears/gold"
+      "tag": "forge:gears/aluminium"
     },
     {
-      "tag": "forge:gears/gold"
+      "tag": "forge:gears/aluminium"
     },
     {
-      "tag": "forge:gears/gold"
+      "tag": "forge:gears/aluminium"
     }
   ],
   "inputFluid": "{Amount:2000,FluidName:\"industrialforegoing:pink_slime\"}",

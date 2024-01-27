@@ -3,6 +3,9 @@
         "first_run": false
     },
     "GuiSettings": {
+        "enable_inventory_buttons": {
+            "value": false
+        },
         "continuous_crafting_saved_value": false
     }
 }
