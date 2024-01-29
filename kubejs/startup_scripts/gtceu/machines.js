@@ -44,11 +44,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("sieve", "simple",
         GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
         .recipeType("sieve", true, true)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/sieve"));
+        .workableTieredHullRenderer("gtceu:block/machines/sieve");
 
     event.create("inscriber", "simple",
         GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV)
         .recipeType("inscriber", true, true)
         .tankScalingFunction(tier => tier * 4800)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/inscriber"));
+        .workableTieredHullRenderer("gtceu:block/machines/inscriber");
 });

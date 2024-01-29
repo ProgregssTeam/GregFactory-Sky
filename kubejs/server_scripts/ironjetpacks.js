@@ -2,6 +2,17 @@
 * ironjetpacks.js - Modify recipes about Iron Jetpacks.
 */
 ServerEvents.recipes(event => {
+    function remove_recipe(name) {
+        event.remove({ output: name });
+    }
+    const remove_items = [
+        "ironjetpacks:basic_coil",
+        "ironjetpacks:advanced_coil",
+        "ironjetpacks:elite_coil",
+        "ironjetpacks:ultimate_coil",
+    ];
+    remove_items.forEach(remove_recipe);
+
     const voltage_to_cable = {
         "lv": "tin",
         "mv": "copper",

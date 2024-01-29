@@ -6,6 +6,8 @@
     "material.gtceu.overworld_matter": "Overworld Matter",
     "material.gtceu.nether_matter": "Nether Matter",
     "material.gtceu.end_matter": "End Matter",
+    "material.gtceu.neotron_fluid": "Neotron Fluid",
+    "material.gtceu.proton_fluid": "Proton Fluid",
     "gtceu.inscriber": "Inscriber",
     "block.gtceu.lv_inscriber": "Basic Inscriber",
     "block.gtceu.mv_inscriber": "§bAdvanced Inscriber§r",
@@ -28,5 +30,13 @@
     "block.gtceu.zpm_sieve": "§cElite Electric Sieve III§r",
     "block.gtceu.uv_sieve": "§3Ultimate Electric Sieve§r",
     "gtceu.void_miner": "Void Miner",
-    "block.gtceu.void_miner": "Void Miner"
+    "block.gtceu.void_miner": "Void Miner",
+    "gtceu.atom_breaker": "Atom Breaker",
+    "block.gtceu.uv_atom_breaker": "§3Ultimate Atom Breaker§r",
+    "gtceu.proton_confiner": "Proton Confiner",
+    "block.gtceu.uv_proton_confiner": "§3Ultimate Proton Confiner§r",
+    "gtceu.final_test": "Final Test",
+    "block.gtceu.uv_final_test": "§3Final Test§r",
+    "gtceu.emulator": "Emulator",
+    "block.gtceu.emulator": "Emulator"
 }

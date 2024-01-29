@@ -17,7 +17,7 @@
       "tag": "forge:dyes/purple"
     }
   ],
-  "inputFluid": "{Amount:250,FluidName:\"industrialforegoing:latex\"}",
+  "inputFluid": "{Amount:250,FluidName:\"gtceu:polyethylene\"}",
   "output": {
     "count": 1,
     "item": "industrialforegoing:laser_lens10"

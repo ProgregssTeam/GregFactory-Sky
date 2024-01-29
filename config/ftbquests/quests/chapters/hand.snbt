@@ -166,7 +166,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2A535A169C6AB9F4"]
+			dependencies: ["4487A713E7BBB36A"]
 			description: ["{hand.gfs.furnace.description}"]
 			id: "7DFA26B22E8322CC"
 			tasks: [{

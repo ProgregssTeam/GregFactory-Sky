@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "end"
+	group: ""
+	id: "2C87A640C733CF38"
+	order_index: 11
+	quest_links: [ ]
+	quests: [{
+		id: "6040FA2C582882DD"
+		tasks: [
+			{
+				count: 2L
+				id: "2D63A927A2EFE7F8"
+				item: "storagedrawers:creative_vending_upgrade"
+				type: "item"
+			}
+			{
+				id: "64C93D584DE952D5"
+				item: "gtceu:infinite_energy"
+				type: "item"
+			}
+		]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "End"
+}
