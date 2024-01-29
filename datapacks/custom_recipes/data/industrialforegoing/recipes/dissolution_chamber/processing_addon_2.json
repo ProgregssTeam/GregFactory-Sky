@@ -26,7 +26,7 @@
       "item": "minecraft:crafting_table"
     }
   ],
-  "inputFluid": "{Amount:1000,FluidName:\"industrialforegoing:latex\"}",
+  "inputFluid": "{Amount:1000,FluidName:\"gtceu:polyethylene\"}",
   "output": {
     "count": 1,
     "item": "industrialforegoing:processing_addon_2",

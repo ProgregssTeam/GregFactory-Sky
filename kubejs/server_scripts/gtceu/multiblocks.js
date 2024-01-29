@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
     function add_void_miner_recipe(name, dimension, eu, index, parent_table, table) {
         let recipe = event.recipes.gtceu.void_miner("void_miner_" + name + "_" + dimension + "_" + index)
             .inputFluids(Fluid.of(parent_table.basic_table.input, 100))
-            .chancedInput(InputItem.of(table.input), 400, 0)
+            .chancedInput(InputItem.of(table.input), 40, -6)
             .duration(30)
             .EUt(eu)
         let output_table = parent_table.basic_table.output.concat(table.output);
@@ -171,19 +171,25 @@ ServerEvents.recipes(event => {
         zpm_table: {
             input: 'gfs:zpm_drill_bit',
             output: [
-
+                ["gtceu:apatite_ore", 0.12],
+                ["gtceu:tricalcium_phosphate_ore", 0.08],
+                ["gtceu:pyrochlore_ore", 0.04],
             ]
         },
         uv_table: {
             input: 'gfs:uv_drill_bit',
             output: [
-
+                ["gtceu:apatite_ore", 0.12],
+                ["gtceu:tricalcium_phosphate_ore", 0.08],
+                ["gtceu:pyrochlore_ore", 0.04],
             ]
         },
         uhv_table: {
             input: 'gfs:uhv_drill_bit',
             output: [
-
+                ["gtceu:apatite_ore", 0.12],
+                ["gtceu:tricalcium_phosphate_ore", 0.08],
+                ["gtceu:pyrochlore_ore", 0.04],
             ]
         }
     };
@@ -311,6 +317,15 @@ ServerEvents.recipes(event => {
         luv_table: {
             input: 'gfs:luv_drill_bit',
             output: [
+                ["gtceu:endstone_bornite_ore", 0.03],
+                ["gtceu:endstone_cooperite_ore", 0.02],
+                ["gtceu:endstone_platinum_ore", 0.02],
+                ["gtceu:endstone_palladium_ore", 0.01],
+
+                ["gtceu:endstone_scheelite_ore", 0.06],
+                ["gtceu:endstone_tungstate_ore", 0.04],
+                ["gtceu:endstone_lithium_ore", 0.02],
+
                 ["gtceu:endstone_pitchblende_ore", 0.09],
                 ["gtceu:endstone_uraninite_ore", 0.06],
             ]
@@ -318,38 +333,80 @@ ServerEvents.recipes(event => {
         zpm_table: {
             input: 'gfs:zpm_drill_bit',
             output: [
+                ["gtceu:endstone_bornite_ore", 0.03],
+                ["gtceu:endstone_cooperite_ore", 0.02],
+                ["gtceu:endstone_platinum_ore", 0.02],
+                ["gtceu:endstone_palladium_ore", 0.01],
+
+                ["gtceu:endstone_scheelite_ore", 0.06],
+                ["gtceu:endstone_tungstate_ore", 0.04],
+                ["gtceu:endstone_lithium_ore", 0.02],
+
+                ["gtceu:endstone_pitchblende_ore", 0.09],
+                ["gtceu:endstone_uraninite_ore", 0.06],
+
                 ["gtceu:endstone_naquadah_ore", 0.09],
                 ["gtceu:endstone_plutonium_ore", 0.03],
             ]
         },
         uv_table: {
             input: 'gfs:uv_drill_bit',
-            output: []
+            output: [
+                ["gtceu:endstone_bornite_ore", 0.03],
+                ["gtceu:endstone_cooperite_ore", 0.02],
+                ["gtceu:endstone_platinum_ore", 0.02],
+                ["gtceu:endstone_palladium_ore", 0.01],
+
+                ["gtceu:endstone_scheelite_ore", 0.06],
+                ["gtceu:endstone_tungstate_ore", 0.04],
+                ["gtceu:endstone_lithium_ore", 0.02],
+
+                ["gtceu:endstone_pitchblende_ore", 0.09],
+                ["gtceu:endstone_uraninite_ore", 0.06],
+
+                ["gtceu:endstone_naquadah_ore", 0.09],
+                ["gtceu:endstone_plutonium_ore", 0.03],
+            ]
         },
         uhv_table: {
             input: 'gfs:uhv_drill_bit',
-            output: []
+            output: [
+                ["gtceu:endstone_bornite_ore", 0.03],
+                ["gtceu:endstone_cooperite_ore", 0.02],
+                ["gtceu:endstone_platinum_ore", 0.02],
+                ["gtceu:endstone_palladium_ore", 0.01],
+
+                ["gtceu:endstone_scheelite_ore", 0.06],
+                ["gtceu:endstone_tungstate_ore", 0.04],
+                ["gtceu:endstone_lithium_ore", 0.02],
+
+                ["gtceu:endstone_pitchblende_ore", 0.09],
+                ["gtceu:endstone_uraninite_ore", 0.06],
+
+                ["gtceu:endstone_naquadah_ore", 0.09],
+                ["gtceu:endstone_plutonium_ore", 0.03],
+            ]
         }
     };
 
     add_void_miner_recipe("ev", "overworld", 1920, 0, overworld_table, overworld_table.ev_table);
-    add_void_miner_recipe("iv", "overworld", 1920, 1, overworld_table, overworld_table.iv_table);
-    add_void_miner_recipe("luv", "overworld", 1920, 2, overworld_table, overworld_table.luv_table);
-    add_void_miner_recipe("zpm", "overworld", 1920, 3, overworld_table, overworld_table.zpm_table);
-    add_void_miner_recipe("uv", "overworld", 1920, 4, overworld_table, overworld_table.uv_table);
-    add_void_miner_recipe("uhv", "overworld", 1920, 5, overworld_table, overworld_table.uhv_table);
+    add_void_miner_recipe("iv", "overworld", 7680, 1, overworld_table, overworld_table.iv_table);
+    add_void_miner_recipe("luv", "overworld", 30720, 2, overworld_table, overworld_table.luv_table);
+    add_void_miner_recipe("zpm", "overworld", 122880, 3, overworld_table, overworld_table.zpm_table);
+    add_void_miner_recipe("uv", "overworld", 491520, 4, overworld_table, overworld_table.uv_table);
+    add_void_miner_recipe("uhv", "overworld", 1966080, 5, overworld_table, overworld_table.uhv_table);
 
     add_void_miner_recipe("ev", "nether", 1920, 0, nether_table, nether_table.ev_table);
-    add_void_miner_recipe("iv", "nether", 1920, 1, nether_table, nether_table.iv_table);
-    add_void_miner_recipe("luv", "nether", 1920, 2, nether_table, nether_table.luv_table);
-    add_void_miner_recipe("zpm", "nether", 1920, 3, nether_table, nether_table.zpm_table);
-    add_void_miner_recipe("uv", "nether", 1920, 4, nether_table, nether_table.uv_table);
-    add_void_miner_recipe("uhv", "nether", 1920, 5, nether_table, nether_table.uhv_table);
+    add_void_miner_recipe("iv", "nether", 7680, 1, nether_table, nether_table.iv_table);
+    add_void_miner_recipe("luv", "nether", 30720, 2, nether_table, nether_table.luv_table);
+    add_void_miner_recipe("zpm", "nether", 122880, 3, nether_table, nether_table.zpm_table);
+    add_void_miner_recipe("uv", "nether", 491520, 4, nether_table, nether_table.uv_table);
+    add_void_miner_recipe("uhv", "nether", 1966080, 5, nether_table, nether_table.uhv_table);
 
     add_void_miner_recipe("ev", "end", 1920, 0, end_table, end_table.ev_table);
-    add_void_miner_recipe("iv", "end", 1920, 1, end_table, end_table.iv_table);
-    add_void_miner_recipe("luv", "end", 1920, 2, end_table, end_table.luv_table);
-    add_void_miner_recipe("zpm", "end", 1920, 3, end_table, end_table.zpm_table);
-    add_void_miner_recipe("uv", "end", 1920, 4, end_table, end_table.uv_table);
-    add_void_miner_recipe("uhv", "end", 1920, 5, end_table, end_table.uhv_table);
+    add_void_miner_recipe("iv", "end", 7680, 1, end_table, end_table.iv_table);
+    add_void_miner_recipe("luv", "end", 30720, 2, end_table, end_table.luv_table);
+    add_void_miner_recipe("zpm", "end", 122880, 3, end_table, end_table.zpm_table);
+    add_void_miner_recipe("uv", "end", 491520, 4, end_table, end_table.uv_table);
+    add_void_miner_recipe("uhv", "end", 1966080, 5, end_table, end_table.uhv_table);
 });

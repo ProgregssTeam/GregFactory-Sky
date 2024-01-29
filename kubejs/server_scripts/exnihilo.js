@@ -441,6 +441,7 @@ ServerEvents.recipes(event => {
         ["gtceu:crushed_chromite_ore", 0.2],
         ["gtceu:crushed_gold_ore", 0.1],
         ["gtceu:crushed_platinum_ore", 0.15],
+        ["gtceu:crushed_monazite_ore", 0.3],
     ];
 
     add_sieve_recipe("crushed_end_stone", "exdeorum:crushed_end_stone", mesh_1_crushed_end_stone_table, "string");

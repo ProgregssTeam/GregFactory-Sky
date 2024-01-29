@@ -7,18 +7,32 @@
 	id: "542BF2FA5C9CAE77"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		description: ["{start.gfs.welcome.description}"]
-		id: "207B3AC75D3EBA74"
-		size: 3.0d
-		tasks: [{
-			id: "38CC3BF6E8E53270"
-			title: "Have fun!"
-			type: "checkmark"
-		}]
-		title: "{start.gfs.welcome.title}"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: ["{start.gfs.welcome.description}"]
+			id: "207B3AC75D3EBA74"
+			size: 3.0d
+			tasks: [{
+				id: "38CC3BF6E8E53270"
+				title: "Have fun!"
+				type: "checkmark"
+			}]
+			title: "{start.gfs.welcome.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["Eat strange blue matter"]
+			id: "09588A8E5CA3CD34"
+			tasks: [{
+				id: "10E87E7F8B3DE33C"
+				item: "gtceu:rare_blue_matter_dust"
+				type: "item"
+			}]
+			title: "临时任务"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
 	title: "{start.gfs.chapter.title}"
 }

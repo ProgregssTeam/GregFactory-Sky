@@ -6,6 +6,8 @@
     "material.gtceu.overworld_matter": "主世界物质",
     "material.gtceu.nether_matter": "下界物质",
     "material.gtceu.end_matter": "末地物质",
+    "material.gtceu.neotron_fluid": "中子流体",
+    "material.gtceu.proton_fluid": "质子流体",
     "gtceu.inscriber": "压印器",
     "block.gtceu.lv_inscriber": "基础压印器",
     "block.gtceu.mv_inscriber": "§b进阶压印器§r",
@@ -30,5 +32,13 @@
     "block.gtceu.zpm_sieve": "§c精英电动筛 III§r",
     "block.gtceu.uv_sieve": "§3终极电动筛§r",
     "gtceu.void_miner": "虚空采矿机",
-    "block.gtceu.void_miner": "虚空采矿机"
+    "block.gtceu.void_miner": "虚空采矿机",
+    "gtceu.atom_breaker": "原子分解机",
+    "block.gtceu.uv_atom_breaker": "§3终极原子分解机§r",
+    "gtceu.proton_confiner": "质子约束机",
+    "block.gtceu.uv_proton_confiner": "§3终极质子约束机§r",
+    "gtceu.final_test": "最终试炼",
+    "block.gtceu.uv_final_test": "§3最终试炼§r",
+    "gtceu.emulator": "仿真器",
+    "block.gtceu.emulator": "仿真器"
 }
