@@ -1,0 +1,2 @@
+// Compost colors for simplecorelib. You may add your own colors, change existing ones, or remove colors that aren't needed.
+test_bars, #a1a1a1
