@@ -7,6 +7,7 @@
 /ldlib
 /libraries
 /logs
+/backups
 /natives-windows-x86_64
 /patchouli_books
 /resourcepacks
@@ -41,3 +42,4 @@ PCL.ini
 launcher_profiles.json
 /*.jar
 /*.json
+*.zip

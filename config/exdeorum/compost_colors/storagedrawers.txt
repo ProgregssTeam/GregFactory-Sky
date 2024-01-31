@@ -1,0 +1,19 @@
+// Compost colors for storagedrawers. You may add your own colors, change existing ones, or remove colors that aren't needed.
+creative_storage_upgrade, #ddc090
+creative_vending_upgrade, #d09b8e
+diamond_storage_upgrade, #b1c391
+drawer_key, #eeb908
+emerald_storage_upgrade, #b5c573
+fill_level_upgrade, #e49d5c
+gold_storage_upgrade, #ebc864
+illumination_upgrade, #cfa462
+iron_storage_upgrade, #e0c393
+max_redstone_upgrade, #d46f46
+min_redstone_upgrade, #d46f46
+obsidian_storage_upgrade, #a88961
+one_stack_upgrade, #ac9062
+quantify_key, #edb808
+redstone_upgrade, #bf8a54
+shroud_key, #edb608
+upgrade_template, #d7b57d
+void_upgrade, #b89666
