@@ -4,7 +4,7 @@
 
 <img src="Title.png" width="200px">
 
-|![[curseforge-download]][curseforge-badge]|
+|[![][curseforge-badge]][curseforge-download]|
 |---|
 </div>
 
