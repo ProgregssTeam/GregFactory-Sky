@@ -337,8 +337,27 @@
 			]
 			id: "37385349D34F896D"
 			tasks: [{
-				id: "1F5A133756CC4C69"
-				item: "gtceu:ethanol_bucket"
+				icon: "gtceu:ethanol_bucket"
+				id: "555273E026C158A8"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									FluidName: "gtceu:ethanol"
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:ethanol_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 6.0d
@@ -348,8 +367,27 @@
 			dependencies: ["64657D7EB685019F"]
 			id: "480E44BB1D1F08C9"
 			tasks: [{
-				id: "6CF752D8D721DBA8"
-				item: "gtceu:biomass_bucket"
+				icon: "gtceu:biomass_bucket"
+				id: "1C014E8186A06CC2"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									FluidName: "gtceu:biomass"
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:biomass_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 6.0d
@@ -458,8 +496,27 @@
 			dependency_requirement: "one_completed"
 			id: "7BA456959DF4C622"
 			tasks: [{
-				id: "0E2EDD480768CED5"
-				item: "gtceu:sulfuric_acid_bucket"
+				icon: "gtceu:sulfuric_acid_bucket"
+				id: "7CE10E616C329ECA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									FluidName: "gtceu:sulfuric_acid"
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:sulfuric_acid_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 12.0d
@@ -473,8 +530,27 @@
 			]
 			id: "15EBE4D092B818A0"
 			tasks: [{
-				id: "6AA2488F37F8384E"
-				item: "gtceu:ethylene_bucket"
+				icon: "gtceu:ethylene_bucket"
+				id: "1C7EE176F967D616"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									FluidName: "gtceu:ethylene"
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:ethylene_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 10.0d
@@ -490,13 +566,51 @@
 			id: "45FF531F26B85B95"
 			tasks: [
 				{
-					id: "13991EBB9F18CB02"
-					item: "gtceu:oxygen_bucket"
+					icon: "gtceu:hydrogen_bucket"
+					id: "0DA3B740C1284FEF"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										FluidName: "gtceu:hydrogen"
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:hydrogen_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "15E94AC08F210A2B"
-					item: "gtceu:hydrogen_bucket"
+					icon: "gtceu:oxygen_bucket"
+					id: "1DBC14B0BF157F58"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:weak_nbt"
+									tag: {
+										FluidName: "gtceu:oxygen"
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:oxygen_bucket"
+								}
+							]
+						}
+					}
 					type: "item"
 				}
 			]
@@ -511,8 +625,27 @@
 			id: "686F11A969C396AF"
 			size: 2.0d
 			tasks: [{
-				id: "0EB6F4E97902FFC1"
-				item: "gtceu:polyethylene_bucket"
+				icon: "gtceu:polyethylene_bucket"
+				id: "70F76814B320A148"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									FluidName: "gtceu:polyethylene"
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polyethylene_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			x: 8.0d

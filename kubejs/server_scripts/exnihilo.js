@@ -277,6 +277,8 @@ ServerEvents.recipes(event => {
 
     // String
     const mesh_1_dust_table = [
+        ["minecraft:prismarine_shard", 0.6],
+        ["minecraft:prismarine_crystals", 0.6],
     ];
 
     // Tin Alloy

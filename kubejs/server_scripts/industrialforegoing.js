@@ -1,7 +1,7 @@
 /*
 * industrialforegoing.js - Modify recipes about Industrial Foregoing.
 */
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
     function remove_recipe(name) {
         event.remove({ output: name });
     }
@@ -58,7 +58,9 @@ ServerEvents.recipes((event) => {
 
     event.replaceInput({ mod: "industrialforegoing" }, "#forge:gears/gold", "#forge:gears/aluminium");
 
-        /**
+    event.remove({ type: "industrialforegoing:dissolution_chamber" });
+
+    /**
      * @param {Internal.ItemStack_} output
      * @param {Array<Special.Item|Special.ItemTag>} input
      * @param {Internal.FluidStack_} inputFluid
