@@ -299,6 +299,9 @@ ServerEvents.recipes(event => {
         ev_table: {
             input: 'gfs:ev_drill_bit',
             output: [
+                ["gtceu:endstone_scheelite_ore", 0.06],
+                ["gtceu:endstone_tungstate_ore", 0.04],
+                ["gtceu:endstone_lithium_ore", 0.02],
             ]
         },
         iv_table: {
