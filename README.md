@@ -1,6 +1,18 @@
+<div align="center">
+
 # GregFactory Sky
-<img src="https://github.com/ProgregssTeam/GregFactory-Sky/blob/main/Title.png" width="200px" height="200px"><br><br>
-[<img src="http://cf.way2muchnoise.eu/963805.svg" width="200px" height="50px">](https://www.curseforge.com/minecraft/modpacks/gregfactory-sky)<br>
-这是一个以格雷科技现代版为主要模组的科技类空岛包。 从一棵树、一片土开始，通过各种手段获得多种资源，一步步建立起你的工厂，自动化生产一切。<br>
-整合包目前仍处于开发阶段，前期游戏可以进行，但是仍可能进行大的更改。<br>
-请注意：创建世界时请选择"空岛"世界类型。<br>
+
+<img src="Title.png" width="200px">
+
+|![[curseforge-download]][curseforge-badge]|
+|---|
+</div>
+
+这是一个以格雷科技现代版为主要模组的科技类空岛包。 从一棵树、一片土开始，通过各种手段获得多种资源，一步步建立起你的工厂，自动化生产一切。  
+整合包目前仍处于开发阶段，前期游戏可以进行，但是仍可能进行大的更改。  
+请注意：创建世界时请选择"空岛"世界类型。  
+
+---
+
+[curseforge-badge]: https://img.shields.io/curseforge/dt/963805?style=for-the-badge&logo=curseforge&label=CurseForge%20Downloads&labelColor=0d0d0d&color=ff784d
+[curseforge-download]: https://www.curseforge.com/minecraft/modpacks/gregfactory-sky
