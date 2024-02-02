@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
         "buildinggadgets2:gadget_copy_paste",
         "buildinggadgets2:gadget_cut_paste",
         "buildinggadgets2:gadget_destruction",
+        "buildinggadgets2:template_manager",
     ];
     remove_items.forEach(remove_recipe);
 
@@ -69,6 +70,17 @@ ServerEvents.recipes(event => {
             D: "#gtceu:circuits/lv",
             E: "gtceu:diamond_plate",
             F: "gtceu:tin_single_cable",
+        }
+    );
+    event.shaped(
+        "buildinggadgets2:template_manager",
+        ["ABA", "CDC", "AEA"],
+        {
+            A: "gtceu:tin_single_cable",
+            B: "#forge:chests/wooden",
+            C: "#gtceu:circuits/lv",
+            D: "gtceu:lv_machine_hull",
+            E: "gtceu:lv_electric_piston"
         }
     );
 });
