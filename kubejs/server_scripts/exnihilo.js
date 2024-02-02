@@ -10,7 +10,8 @@ ServerEvents.recipes(event => {
     const remove_items = [
         "exdeorum:unfired_porcelain_bucket",
         "exdeorum:porcelain_bucket",
-        "exdeorum:mechanical_sieve"
+        "exdeorum:mechanical_sieve",
+        "exdeorum:mechanical_hammer"
     ];
     remove_items.forEach(remove_recipe);
 
