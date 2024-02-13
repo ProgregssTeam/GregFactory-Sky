@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
     function add_void_miner_recipe(name, dimension, eu, index, parent_table, table) {
         let recipe = event.recipes.gtceu.void_miner("void_miner_" + name + "_" + dimension + "_" + index)
             .inputFluids(Fluid.of(parent_table.basic_table.input, 100))
-            .chancedInput(InputItem.of(table.input), 40, -6)
+            .chancedInput(InputItem.of(table.input), 10, -1)
             .duration(30)
             .EUt(eu)
         let output_table = parent_table.basic_table.output.concat(table.output);
@@ -248,6 +248,8 @@ ServerEvents.recipes(event => {
                 ["gtceu:netherrack_sulfur_ore", 0.3],
                 ["gtceu:netherrack_pyrite_ore", 0.2],
                 ["gtceu:netherrack_sphalerite_ore", 0.1],
+
+                ["minecraft:ancient_debris", 0.05],
             ]
         },
         //各个电压的配方表

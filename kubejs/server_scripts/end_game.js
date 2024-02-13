@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ftbquests:book")
         .notConsumable("gtceu:nan_certificate")
         .itemOutputs("ftbquests:book", "gtceu:nan_certificate",
-            "2x storagedrawers:creative_vending_upgrade", "gtceu:infinite_energy")
+            "2x gtceu:creative_chest", "gtceu:creative_tank", "gtceu:creative_energy")
         .EUt(1200000)
         .duration(20 * 60 * 16);
 });

@@ -9,24 +9,24 @@ ServerEvents.recipes(event => {
             "32x #forge:gems",
             "32x #forge:plates")
         .inputFluids(Fluid.of("minecraft:milk", 4000), Fluid.of("gtceu:rocket_fuel", 8000))
-        .outputFluids(Fluid.of("gtceu:mysterious_matter", 40000))
+        .outputFluids(Fluid.of("gtceu:mysterious_matter", 4000))
         .EUt(1920)
         .duration(1200);
     event.recipes.gtceu.chemical_reactor("gtceu:overworld_matter")
         .itemInputs("64x gtceu:stone_dust")
-        .inputFluids(Fluid.of("gtceu:mysterious_matter", 1000))
+        .inputFluids(Fluid.of("gtceu:mysterious_matter", 100))
         .outputFluids(Fluid.of("gtceu:overworld_matter", 1000))
         .EUt(1920)
         .duration(200);
     event.recipes.gtceu.chemical_reactor("gtceu:nether_matter")
         .itemInputs("64x gtceu:netherrack_dust")
-        .inputFluids(Fluid.of("gtceu:mysterious_matter", 1000))
+        .inputFluids(Fluid.of("gtceu:mysterious_matter", 100))
         .outputFluids(Fluid.of("gtceu:nether_matter", 1000))
         .EUt(1920)
         .duration(200);
     event.recipes.gtceu.chemical_reactor("gtceu:end_matter")
         .itemInputs("64x gtceu:endstone_dust")
-        .inputFluids(Fluid.of("gtceu:mysterious_matter", 1000))
+        .inputFluids(Fluid.of("gtceu:mysterious_matter", 100))
         .outputFluids(Fluid.of("gtceu:end_matter", 1000))
         .EUt(1920)
         .duration(200);

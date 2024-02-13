@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("emulator")
         .category("gfs")
         .setEUIO("in")
-        .setMaxIOSize(2, 4, 0, 0)
+        .setMaxIOSize(2, 5, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER);
 });
