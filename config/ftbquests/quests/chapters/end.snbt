@@ -11,13 +11,18 @@
 		tasks: [
 			{
 				count: 2L
-				id: "2D63A927A2EFE7F8"
-				item: "storagedrawers:creative_vending_upgrade"
+				id: "602BD816F6D7C260"
+				item: "gtceu:creative_chest"
 				type: "item"
 			}
 			{
-				id: "64C93D584DE952D5"
-				item: "gtceu:infinite_energy"
+				id: "3313B0306C2D11FF"
+				item: "gtceu:creative_tank"
+				type: "item"
+			}
+			{
+				id: "6571CA490FFC56EF"
+				item: "gtceu:creative_energy"
 				type: "item"
 			}
 		]
