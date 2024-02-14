@@ -17,21 +17,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 });
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
-    event.create("atom_breaker", "electric")
+    event.create("atom_breaker")
         .category("gfs")
         .setEUIO("in")
         .setMaxIOSize(1, 0, 1, 2)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_UNPACKER, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER);
-    event.create("proton_confiner", "electric")
+    event.create("proton_confiner")
         .category("gfs")
         .setEUIO("in")
         .setMaxIOSize(0, 0, 1, 1)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_UNPACKER, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER);
-    event.create("final_test", "electric")
+    event.create("final_test")
         .category("gfs")
         .setEUIO("in")
         .setMaxIOSize(3, 1, 6, 1)
