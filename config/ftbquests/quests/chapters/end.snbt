@@ -6,28 +6,165 @@
 	id: "2C87A640C733CF38"
 	order_index: 11
 	quest_links: [ ]
-	quests: [{
-		id: "6040FA2C582882DD"
-		tasks: [
-			{
-				count: 2L
-				id: "602BD816F6D7C260"
-				item: "gtceu:creative_chest"
+	quests: [
+		{
+			dependencies: [
+				"7F3CC02768DE50DF"
+				"2DF59D55E7AF97C1"
+			]
+			id: "6040FA2C582882DD"
+			tasks: [
+				{
+					count: 2L
+					id: "602BD816F6D7C260"
+					item: "gtceu:creative_chest"
+					type: "item"
+				}
+				{
+					id: "3313B0306C2D11FF"
+					item: "gtceu:creative_tank"
+					type: "item"
+				}
+				{
+					id: "6571CA490FFC56EF"
+					item: "gtceu:creative_energy"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"00CDF6D979C98C5D"
+				"082FC3B9BD97F769"
+				"66EB030388CA8694"
+			]
+			id: "7F3CC02768DE50DF"
+			tasks: [{
+				id: "5E4EE78C5E6D1191"
+				item: "gtceu:nan_certificate"
 				type: "item"
-			}
-			{
-				id: "3313B0306C2D11FF"
-				item: "gtceu:creative_tank"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"00CDF6D979C98C5D"
+				"082FC3B9BD97F769"
+			]
+			id: "2DF59D55E7AF97C1"
+			tasks: [{
+				id: "395D3C14DD35E84A"
+				item: "gtceu:emulator"
 				type: "item"
-			}
-			{
-				id: "6571CA490FFC56EF"
-				item: "gtceu:creative_energy"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7176A845024CA288"]
+			id: "082FC3B9BD97F769"
+			tasks: [{
+				icon: "gtceu:neutron_fluid_bucket"
+				id: "2859B623F7969F17"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									FluidName: "gtceu:neutron_fluid"
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:neutron_fluid_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
-			}
-		]
-		x: 0.0d
-		y: 0.0d
-	}]
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["125B3ADB916F3612"]
+			id: "00CDF6D979C98C5D"
+			tasks: [{
+				icon: "gtceu:proton_fluid_bucket"
+				id: "306F62EF0C9274CE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:weak_nbt"
+								tag: {
+									FluidName: "gtceu:proton_fluid"
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:proton_fluid_bucket"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["71F0C3ED9E82815E"]
+			id: "125B3ADB916F3612"
+			tasks: [{
+				id: "40FACB48B6F67924"
+				item: "gtceu:uv_proton_confiner"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["71F0C3ED9E82815E"]
+			id: "7176A845024CA288"
+			tasks: [{
+				id: "7EFEA64F86834FB3"
+				item: "gtceu:uv_atom_breaker"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			id: "66EB030388CA8694"
+			tasks: [{
+				id: "13CF6482B093A696"
+				item: "gtceu:uv_final_test"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "71F0C3ED9E82815E"
+			tasks: [{
+				id: "6CCE4538AD9190BD"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+	]
 	title: "End"
 }
