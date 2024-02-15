@@ -32,12 +32,12 @@ ServerEvents.recipes(event => {
             H: "gtceu:uv_emitter"
         }
     );
-    function add_atom_breaker_recipe(name, input, isitem, hydrogen, neotron) {
+    function add_atom_breaker_recipe(name, input, isitem, hydrogen, neutron) {
         var recipe = event.recipes.gtceu.atom_breaker("atom_breaker/" + name)
             .outputFluids(Fluid.of("gtceu:hydrogen", hydrogen * 1000),
-                Fluid.of("gtceu:neotron_fluid", neotron * 1000))
+                Fluid.of("gtceu:neutron_fluid", neutron * 1000))
             .EUt(300000)
-            .duration(20 * (hydrogen + neotron));
+            .duration(20 * (hydrogen + neutron));
         if (isitem)
             recipe.itemInputs(input);
         else
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.final_test("final_test")
         .circuit(16)
         .itemInputs("gtceu:neutronium_plate", "#minecraft:music_discs")
-        .inputFluids(Fluid.of("gtceu:proton_fluid", 128000), Fluid.of("gtceu:neotron_fluid", 128000))
+        .inputFluids(Fluid.of("gtceu:proton_fluid", 128000), Fluid.of("gtceu:neutron_fluid", 128000))
         .itemOutputs("gtceu:nan_certificate")
         .outputFluids(Fluid.of("minecraft:water", 1000))
         .EUt(7)
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
             "6x gtceu:neutronium_plate",
             "#gtceu:circuits/uhv",
             "2x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
-        .inputFluids(Fluid.of("gtceu:proton_fluid", 1024), Fluid.of("gtceu:neotron_fluid", 1024))
+        .inputFluids(Fluid.of("gtceu:proton_fluid", 1024), Fluid.of("gtceu:neutron_fluid", 1024))
         .itemOutputs("2x gtceu:atomic_casing")
         .EUt(1200000)
         .duration(50);

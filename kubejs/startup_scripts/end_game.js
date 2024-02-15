@@ -8,7 +8,7 @@ StartupEvents.registry("item", event => {
 });
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("neotron_fluid")
+    event.create("neutron_fluid")
         .fluid()
         .color(0x2020b0);
     event.create("proton_fluid")

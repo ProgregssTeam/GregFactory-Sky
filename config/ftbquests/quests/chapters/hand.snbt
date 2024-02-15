@@ -55,7 +55,7 @@
 				}
 				type: "item"
 			}]
-			title: "{hand.gfs.wooden_crook.title}"
+			title: "{hand.gfs.crook.title}"
 			x: -6.0d
 			y: 0.0d
 		}
