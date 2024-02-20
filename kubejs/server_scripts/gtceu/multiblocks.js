@@ -333,6 +333,9 @@ ServerEvents.recipes(event => {
 
                 ["gtceu:endstone_pitchblende_ore", 0.09],
                 ["gtceu:endstone_uraninite_ore", 0.06],
+
+                ["gtceu:endstone_naquadah_ore", 0.09],
+                ["gtceu:endstone_plutonium_ore", 0.03],
             ]
         },
         zpm_table: {

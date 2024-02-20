@@ -35,9 +35,15 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator("gtceu:macerator/macerate_obsidian")
         .itemInputs("minecraft:obsidian")
         .itemOutputs("gtceu:obsidian_dust")
-        .duration(240)
-        .dimension("the_end")
-        .EUt(30);
+        .EUt(30)
+        .duration(240);
+
+    event.recipes.gtceu.bender("gtceu:bender/bend_obsidian_plate_to_dense_plate")
+        .itemInputs("9x #forge:plates/obsidian")
+        .circuit(9)
+        .itemOutputs("gtceu:dense_obsidian_plate")
+        .EUt(96)
+        .duration(400);
 
     event.shaped(
         "minecraft:elytra",
