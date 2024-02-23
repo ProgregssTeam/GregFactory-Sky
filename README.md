@@ -8,7 +8,7 @@
 | -------------------------------------------- | ---------------------------------- |
 </div>
 
-## 欢迎来到 GregFactory Sky！
+<h2 align="center">欢迎来到 GregFactory Sky！</h2>
 
 这是一个以格雷科技现代版（GTM）为主要模组的 1.20.1 科技类轻量空岛包。
 你出生在一个只有一棵树、一片土的空岛上。你将从此出发，创造无限可能。
@@ -35,7 +35,7 @@
 
 ---
 
-## Welcome to GregFactory Sky!
+<h2 align="center">Welcome to GregFactory Sky!</h2>
 
 This is a 1.20.1 technical lite skyblock modpack with GregTech-Modern as its major mod.
 You will spawn on a small island of a tree and some dirt. With these things to start, you will create everything.
@@ -66,8 +66,3 @@ The modpack is almost finished. You can play it now.
 [curseforge-download]: https://www.curseforge.com/minecraft/modpacks/gregfactory-sky
 [discord-badge]: https://img.shields.io/discord/1203359505841389670?style=for-the-badge&logo=discord&label=discord&labelColor=2b2d31&color=23a55a
 [discord-link]: https://discord.gg/EbRDmZmGKz
-
-<style>
-  h1 { text-align: center }
-  h2 { text-align: center }
-</style>
