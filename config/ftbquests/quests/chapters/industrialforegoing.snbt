@@ -7,5 +7,5 @@
 	order_index: 14
 	quest_links: [ ]
 	quests: [ ]
-	title: "工业先锋"
+	title: "{if.gfs.chapter.title}"
 }

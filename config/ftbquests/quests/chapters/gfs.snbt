@@ -22,7 +22,7 @@
 			y: 0.0d
 		}
 		{
-			description: ["Eat strange blue matter"]
+			description: ["{start.gfs.temp.description}"]
 			id: "09588A8E5CA3CD34"
 			tasks: [{
 				id: "10E87E7F8B3DE33C"
