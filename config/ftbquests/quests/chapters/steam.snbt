@@ -10,7 +10,9 @@
 	quests: [
 		{
 			dependencies: ["1BABA00C33BEF6B7"]
+			description: ["{steam.gfs.lp_boiler.description}"]
 			id: "0B01764C373C6BBF"
+			subtitle: "{steam.gfs.lp_boiler.subtitle}"
 			tasks: [{
 				id: "12FFBC697E2B8668"
 				item: {
@@ -31,6 +33,7 @@
 				}
 				type: "item"
 			}]
+			title: "{steam.gfs.lp_boiler.title}"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -98,9 +101,10 @@
 			dependencies: ["225AC4393F6EE812"]
 			id: "40A9D3ADD52871A4"
 			rewards: [{
-				count: 16
+				count: 12
 				id: "748EED7EFD864A7C"
 				item: "gtceu:steel_ingot"
+				random_bonus: 8
 				type: "item"
 			}]
 			tasks: [{
@@ -113,12 +117,14 @@
 		}
 		{
 			dependencies: ["0B01764C373C6BBF"]
+			description: ["{steam.gfs.alloy_smelter.description}"]
 			id: "7E17DFABE7E76334"
 			tasks: [{
 				id: "793B324824AD690C"
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
+			title: "{steam.gfs.alloy_smelter.title}"
 			x: -10.0d
 			y: 0.0d
 		}
@@ -165,8 +171,10 @@
 		}
 		{
 			dependencies: ["0B01764C373C6BBF"]
+			description: ["{steam.gfs.steam_furnace.description}"]
 			id: "5844B9320448E0A3"
 			optional: true
+			subtitle: "{steam.gfs.steam_furnace.subtitle}"
 			tasks: [{
 				id: "12B088369CB54390"
 				item: {
@@ -187,6 +195,7 @@
 				}
 				type: "item"
 			}]
+			title: "{steam.gfs.steam_furnace.title}"
 			x: -12.0d
 			y: -2.0d
 		}
@@ -298,6 +307,12 @@
 				"1BD64BCA738C951D"
 			]
 			id: "7015EDFB9220C95B"
+			rewards: [{
+				count: 4
+				id: "5EFC54BF8855D314"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "22FBE4C064CEF7E7"
@@ -524,6 +539,7 @@
 		}
 		{
 			dependencies: ["7E17DFABE7E76334"]
+			description: ["{steam.gfs.piston.description}"]
 			icon: "minecraft:piston"
 			id: "578DA5E75E3FB662"
 			tasks: [
@@ -538,6 +554,7 @@
 					type: "item"
 				}
 			]
+			title: "{steam.gfs.piston.title}"
 			x: -8.0d
 			y: 0.0d
 		}

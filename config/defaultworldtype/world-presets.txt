@@ -1,9 +1,9 @@
 8 possible world presets found:
-- "minecraft:debug_all_block_states"
-- "exdeorum:void_world"
 - "minecraft:single_biome_surface"
+- "minecraft:large_biomes"
 - "minecraft:normal"
+- "exdeorum:void_world"
 - "minecraft:amplified"
 - "skyblockbuilder:skyblock"
+- "minecraft:debug_all_block_states"
 - "minecraft:flat"
-- "minecraft:large_biomes"

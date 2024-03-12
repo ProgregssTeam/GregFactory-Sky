@@ -74,6 +74,16 @@
     "hand.gfs.diamond.title": "钻石！",
     "hand.gfs.diamond.description": "没有原版那么有用，但也是不可或缺的",
     "steam.gfs.chapter.title": "第1章 蒸汽时代",
+    "steam.gfs.lp_boiler.title": "蒸汽动力",
+    "steam.gfs.lp_boiler.subtitle": "小心别烫着",
+    "steam.gfs.lp_boiler.description": "在界面上用水桶左键点击水槽可以加水。&4热量条&r不为零时加水会有惊喜！",
+    "steam.gfs.steam_furnace.title": "多此一举",
+    "steam.gfs.steam_furnace.subtitle": "好用，就是有点慢",
+    "steam.gfs.steam_furnace.description": "为啥要烧燃料出蒸汽再用蒸汽烧东西呢？",
+    "steam.gfs.alloy_smelter.title": "更方便的合金",
+    "steam.gfs.alloy_smelter.description": "蒸汽机器工作后需要排气，使用扳手来调节排气口。",
+    "steam.gfs.piston.title": "你这活塞是正版的吗",
+    "steam.gfs.piston.description": "我记得不是这么做的啊",
     "lv.gfs.chapter.title": "第2章 低压时代",
     "lv.gfs.hull.title": "LV机器外壳",
     "lv.gfs.hull.description": "你需要&5绝&d对&4天&6马&e行&a空&b的&3想&9象&1能&5力&r来使用它",
@@ -98,5 +108,8 @@
     "uv.gfs.chapter.title": "第9章 极限压时代",
     "uv.gfs.hull.title": "UV机器外壳",
     "uv.gfs.hull.description": "UV",
-    "creative.gfs.chapter.title": "第10章 创造时代"
+    "end.gfs.chapter.title": "格雷终章",
+    "end.gfs.end.title": "通关！！",
+    "end.gfs.end.subtitle": "千辛万苦",
+    "end.gfs.end.description": "非常感谢你一路的陪伴！\n&m我希望真的有人玩到这里"
 }

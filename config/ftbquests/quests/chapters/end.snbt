@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "end"
 	group: ""
+	icon: "gtceu:emulator"
 	id: "2C87A640C733CF38"
 	order_index: 11
 	quest_links: [ ]
@@ -12,7 +13,9 @@
 				"7F3CC02768DE50DF"
 				"2DF59D55E7AF97C1"
 			]
+			description: ["{end.gfs.end.description}"]
 			id: "6040FA2C582882DD"
+			subtitle: "{end.gfs.end.subtitle}"
 			tasks: [
 				{
 					count: 2L
@@ -31,6 +34,7 @@
 					type: "item"
 				}
 			]
+			title: "{end.gfs.end.title}"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -166,5 +170,5 @@
 			y: 0.0d
 		}
 	]
-	title: "End"
+	title: "{end.gfs.chapter.title}"
 }

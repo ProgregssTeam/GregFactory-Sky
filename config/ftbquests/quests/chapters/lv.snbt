@@ -274,6 +274,13 @@
 				"3502D1FA9E24E29A"
 			]
 			id: "6D7AA255166E63C7"
+			rewards: [{
+				count: 12
+				id: "7D115BDD266D48BF"
+				item: "gtceu:aluminium_ingot"
+				random_bonus: 8
+				type: "item"
+			}]
 			tasks: [{
 				id: "47E57ECBE59C012E"
 				item: "gtceu:aluminium_ingot"
