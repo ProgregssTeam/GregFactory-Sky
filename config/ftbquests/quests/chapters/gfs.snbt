@@ -29,7 +29,7 @@
 				item: "gtceu:rare_blue_matter_dust"
 				type: "item"
 			}]
-			title: "临时任务"
+			title: "{start.gfs.temp.title}"
 			x: 4.0d
 			y: 0.0d
 		}

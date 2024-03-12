@@ -593,25 +593,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4D77CE5E6152C0CA"]
-			id: "477113C24CAC4587"
-			optional: true
-			rewards: [{
-				count: 32
-				id: "0A4BF079CB3ECD43"
-				item: "minecraft:dirt"
-				type: "item"
-			}]
-			tasks: [{
-				count: 16L
-				id: "675976FDD14446B8"
-				item: "minecraft:dirt"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -6.0d
-		}
-		{
 			dependencies: ["3F12C3D49E70D9EF"]
 			id: "5C0CB08770D8DC20"
 			tasks: [{
@@ -636,6 +617,25 @@
 			}]
 			x: -2.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["2BA6A93A3C02426A"]
+			description: ["{hand.gfs.bed.description}"]
+			id: "4838C7CB1C3C375B"
+			tasks: [{
+				id: "4868E9B1A5AE0CFB"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				type: "item"
+			}]
+			title: "{hand.gfs.bed.title}"
+			x: -3.0d
+			y: -1.0d
 		}
 	]
 	title: "{hand.gfs.chapter.title}"

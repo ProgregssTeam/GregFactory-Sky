@@ -15,6 +15,7 @@
 			]
 			description: ["{end.gfs.end.description}"]
 			id: "6040FA2C582882DD"
+			size: 5.0d
 			subtitle: "{end.gfs.end.subtitle}"
 			tasks: [
 				{
@@ -35,8 +36,8 @@
 				}
 			]
 			title: "{end.gfs.end.title}"
-			x: 0.0d
-			y: 0.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
