@@ -364,6 +364,13 @@
 			dependencies: ["52A43F057A6116B0"]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "373396BEF0D77223"
+			rewards: [{
+				count: 16
+				id: "1D47B2C58D2245FF"
+				item: "gtceu:wrought_iron_ingot"
+				random_bonus: 6
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "18FA1B4CD7BF75DC"

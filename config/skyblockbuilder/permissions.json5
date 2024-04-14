@@ -33,6 +33,12 @@
     // Cooldown in ticks for teleporting back home. [default: 3600 = 3min]
     "homeCooldown": 0,
     
+    // Should fall damage be removed when teleporting? [default: false]
+    "noFallDamage": false,
+    
+    // Should teleporting be prevented while falling? [default: false]
+    "preventWhileFalling": false,
+    
     // Should players be able to teleport to spawn? [default: true]
     "spawn": true,
     
@@ -44,6 +50,9 @@
     "teleportationDimensions": {
       "allow_list": false,
       "elements": []
-    }
+    },
+    
+    // Cooldown in ticks for visiting other islands. [default: 3600 = 3min]
+    "visitCooldown": 3600
   }
 }

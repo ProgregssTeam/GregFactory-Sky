@@ -31,6 +31,12 @@
 			dependencies: ["04C85EEBF3AD4BD3"]
 			description: ["{hand.gfs.crafting_table.description}"]
 			id: "0D9A7CC2DD21AF8C"
+			rewards: [{
+				count: 16
+				id: "78C056AD3D0D0EEA"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0393A383E2DB886B"
 				item: "minecraft:crafting_table"
@@ -333,6 +339,12 @@
 			dependencies: ["4BD86AC8A8BC1D19"]
 			description: ["{hand.gfs.dirt.description}"]
 			id: "5967A6B261A5A934"
+			rewards: [{
+				count: 8
+				id: "1A7F07F652C516EA"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C06DBD4D083128A"
 				item: "minecraft:dirt"
